@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "kill-your-darlings",
+  "displayName": "Kill Your Darlings",
+  "version": "1.0.0",
+  "description": "Reality-check and 'kill your darlings' partner for any project, plan, draft, feature, or pitch. Anchors the goal, researches reality instead of assuming, names the ego-driven darlings, and returns an evidence-backed keep/cut/rework verdict plus a get-back-on-track plan.",
+  "author": {
+    "name": "ONDERBEY",
+    "url": "https://github.com/ONDERBEY"
+  },
+  "homepage": "https://github.com/ONDERBEY/kill-your-darlings",
+  "repository": "https://github.com/ONDERBEY/kill-your-darlings",
+  "license": "MIT",
+  "keywords": [
+    "kill-your-darlings",
+    "reality-check",
+    "devils-advocate",
+    "critique",
+    "scope-cut",
+    "decision-making",
+    "honest-feedback",
+    "anti-yes-man"
+  ]
+}
