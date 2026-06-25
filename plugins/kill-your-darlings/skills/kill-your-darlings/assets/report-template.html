@@ -43,6 +43,14 @@
   .goal .label{font-size:.75rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin:0 0 4px}
   .goal .text{font-size:1.1rem; font-weight:600; margin:0}
 
+  /* Outside view: neutral cards on purpose, so verdict colors keep their meaning. */
+  .insights{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 0 8px}
+  .insight{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:12px 14px}
+  .insight .k{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
+  .insight .v{margin:0; font-size:.95rem}
+  .insight .src{font-size:.7rem; color:var(--muted); margin-top:6px; display:inline-block}
+  @media (max-width:520px){ .insights{grid-template-columns:1fr} }
+
   /* Working: short, positive, calibrates the cuts. */
   ul.working{list-style:none; padding:0; margin:0}
   ul.working li{padding:6px 0 6px 26px; position:relative}
@@ -85,6 +93,31 @@
   <div class="goal">
     <p class="label">Goal</p>
     <p class="text">More SMB trial signups this quarter, with no extra engineering budget.</p>
+  </div>
+
+  <h2>What the world says</h2>
+  <!-- FILL: outside-view insights from deep research. Keep neutral; tag each source. -->
+  <div class="insights">
+    <div class="insight">
+      <p class="k">Reception</p>
+      <p class="v">"Slow hero" is a recurring complaint in landing-page teardowns; users reward pages that get to the point.</p>
+      <span class="src">Reddit r/SaaS, teardown threads (verified)</span>
+    </div>
+    <div class="insight">
+      <p class="k">Demand now</p>
+      <p class="v">Interest in "page speed and conversion" is rising; "3D website" is flat to cooling.</p>
+      <span class="src">search-trend check (verified)</span>
+    </div>
+    <div class="insight">
+      <p class="k">Forecast</p>
+      <p class="v">Core Web Vitals stay a ranking and conversion lever through the year.</p>
+      <span class="src">analyst outlook (assumed)</span>
+    </div>
+    <div class="insight">
+      <p class="k">Precedent</p>
+      <p class="v">Heavy hero animations repeatedly lose A/B tests against a clear value prop.</p>
+      <span class="src">CRO case studies (verified)</span>
+    </div>
   </div>
 
   <h2>What is working</h2>

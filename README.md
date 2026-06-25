@@ -62,6 +62,12 @@ matching research playbook. See
 
 ## It learns, and it can show its work
 
+- **The outside view.** It does not just read your files. It runs a deep search
+  for what the world already shows: who said what and what they liked
+  (reception), what people want right now (demand), what research forecasts for
+  the space, and what happened to others who tried this before (precedent, the
+  graveyard). These insights land in the verdict and in the HTML report, not just
+  the chat.
 - **Memory.** It reads a running memory at the start and appends what it learned
   at the end, so it gets to know your blind spots over time (the maker who keeps
   over-scoping, the one who is sunk-cost attached). Memory lives in your project

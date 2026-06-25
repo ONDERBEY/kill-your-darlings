@@ -81,6 +81,51 @@ secondary (opinion, summary, memory). When sources bot-block or need a login,
 use live Chrome rather than trusting a curl/WebFetch status. Mark verified vs
 assumed.
 
+## 3b. The outside view (the world's verdict)
+
+A reality check that only reads the maker's own materials is half blind. The
+strongest signal is outside: what the world already shows about this kind of
+thing. Always run a deep search across these four lenses and bring the findings
+into the verdict and the report. This is the difference between an opinion and a
+grounded call.
+
+1. **Reception | what people said and felt.** How did real people react to this,
+   or to the closest existing version of it? Praise, complaints, the feature
+   they begged for, the one they ignored. Sources: reviews (G2, App Store,
+   Amazon), Reddit and Hacker News threads, YouTube comments, X/LinkedIn replies,
+   support tickets, churn reasons. Question it answers: is the love real or
+   assumed?
+
+2. **Demand now | what people want today.** Is interest rising, flat, or dying?
+   Sources: search-trend direction and rising queries, keyword volume over time,
+   "people also ask", marketplace/category growth, what is trending in the space.
+   Question: are you building toward where attention is going, or where it was?
+
+3. **Forecast | where this is heading by the time you ship.** A project lands in
+   the future, so judge it against the future, not today. Sources: analyst and
+   research outlooks (Gartner, McKinsey, industry reports), credible roadmaps,
+   platform direction, regulation on the horizon. Question: will the assumption
+   the darling rests on still hold when the work matures?
+
+4. **Precedent | what happened to others who tried this (the graveyard).** Base
+   rates beat optimism. Who did this before, who won, who died, and why. Sources:
+   post-mortems, shutdown notes, case studies, "we tried X and learned Y" write-
+   ups, historical analogues. Question: what is the most common way this exact
+   bet fails, and are you walking into it?
+
+Concrete base rate to anchor the precedent lens: across CB Insights' analysis of
+failed startups, the top root cause is no market need / poor product-market fit
+(about 42 to 43%): teams build something people did not want enough to pay for.
+"Ran out of money" leads the surface stats (about 70%) but is usually the
+symptom, not the cause. Translation for a reality check: most darlings die from
+solving a non-problem, not from poor execution. Verify any figure before you
+quote it; treat numbers as illustrative unless freshly checked.
+
+Use WebSearch and the firecrawl skills for the sweep, live Chrome for sources
+that bot-block or need a login (reviews, social), and the `deep-research` skill
+when a lens deserves a multi-source, fact-checked pass. Mark each finding
+verified (with source) or assumed.
+
 ## 4. Verdict rubric
 
 | Verdict | Use when | Must include |

@@ -64,7 +64,12 @@ evidence (the data, the user, the live page) over opinion or memory.
 | Design | Task success | a 5-user task test, click/heatmap data |
 | Business | Market | TAM sources, competitor pricing pages (live), customer conversations |
 | Business | Unit economics | a cold spreadsheet: CAC, LTV, margin, payback |
+| Outside view | Reception (what people said/felt) | reviews (G2, App Store, Amazon), Reddit, Hacker News, YouTube comments, X/LinkedIn replies, churn reasons |
+| Outside view | Demand now | search-trend direction, rising queries, keyword volume over time, "people also ask", category growth |
+| Outside view | Forecast | analyst/research outlooks (Gartner, McKinsey, industry reports), platform roadmaps, regulation ahead |
+| Outside view | Precedent (who tried, who died) | post-mortems, shutdown notes, case studies, historical analogues, base-rate reports |
 | Any | Live/blocked sources | use real Chrome when a source bot-blocks or needs login; do not trust a bot-fetched status |
+| Any | Multi-source deep dive | use the `deep-research` skill for a fact-checked, cited pass on a hard lens |
 
 ## 4. Killed darlings log
 
@@ -76,7 +81,23 @@ Format per entry: `- [date] domain | darling | verdict | reason | outcome`
 <!-- seed entries; replace with real ones over time -->
 - (example) 2026-06-25 design | animated 3D landing hero | CUT | +2.1s LCP on mostly-mobile traffic, no conversion lift | (outcome: pending)
 
-## 5. Open questions to revisit
+## 5. Base rates and precedents (the outside view)
+
+Outside-view anchors: what usually happens to projects like this. Base rates beat
+optimism. Verify any figure before quoting it; treat these as illustrative until
+freshly checked.
+
+- **No market need is the number one killer.** Across CB Insights' analysis of
+  failed startups, roughly 42 to 43% cite no market need / poor product-market
+  fit. Most darlings die from solving a non-problem, not from poor execution.
+- **"Ran out of money" is a symptom, not a cause.** It tops surface stats (about
+  70%) but usually traces back to weak demand or bad timing. Ask what dried the
+  money up.
+- **Bad timing is underrated.** Around 29% of failures involve being too early or
+  too late. The forecast lens exists for this reason.
+- (add more verified base rates as you find them, with source and date)
+
+## 6. Open questions to revisit
 
 Unknowns that blocked a clean verdict, parked for a future check. Clear them when
 evidence arrives.

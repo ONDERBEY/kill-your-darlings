@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "A reality-check skill for Claude Code that cuts the ideas you are too in love with. Anchors the real goal, researches the real world, and tells you what to kill.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "kill-your-darlings",
       "source": "./plugins/kill-your-darlings",
       "description": "Reality-check and 'kill your darlings' partner for any project, plan, draft, feature, or pitch. Anchors the goal, researches reality instead of assuming, names the ego-driven darlings, and returns an evidence-backed keep/cut/rework verdict plus a get-back-on-track plan.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "ONDERBEY",
         "url": "https://github.com/ONDERBEY"

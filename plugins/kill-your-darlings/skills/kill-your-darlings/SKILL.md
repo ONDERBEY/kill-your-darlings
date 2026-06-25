@@ -106,6 +106,22 @@ data, or sources that block bots. Use domain data sources (analytics, CRM,
 tickets, SERP/keyword tools) when the project has them. See references/playbook.md
 for the per-domain research playbook.
 
+**Always take the outside view.** Reading only the maker's own materials is half
+blind. Run a deep search across four lenses and report what you find:
+- **Reception:** what real people said and felt about this or the closest
+  existing version (reviews, Reddit/HN, comments, support tickets). Is the love
+  real or assumed?
+- **Demand now:** is interest rising, flat, or dying (search trends, rising
+  queries, category growth)? Building toward where attention is going, or was?
+- **Forecast:** where the space is heading by the time this ships (analyst and
+  research outlooks, platform direction). Will the assumption still hold?
+- **Precedent:** what happened to others who tried this, who won, who died, and
+  why (post-mortems, case studies, base rates). What is the common failure mode?
+
+Use the `deep-research` skill when a lens deserves a multi-source, fact-checked
+pass. Mark each finding verified (with source) or assumed. See section 3b of
+references/playbook.md.
+
 ### Step 3: Inventory the darlings
 List the candidate darlings: the elements the user is visibly attached to, plus
 the ones the evidence flags as dead weight even if the user has not noticed them.
@@ -134,10 +150,13 @@ Output, in this order:
 1. **The goal** you anchored on, in one line.
 2. **What is genuinely working** (2 to 4 items). This calibrates the cuts and
    proves you are not reflexively negative.
-3. **The kill list:** each darling with its verdict (CUT/REWORK/PARK), the
+3. **What the world says** (the outside view): a line each on reception, demand
+   now, forecast, and precedent, each tagged verified or assumed. This is where
+   real insight enters, not just your read of the maker's files.
+4. **The kill list:** each darling with its verdict (CUT/REWORK/PARK), the
    one-line reason tied to goal or evidence, and verified-vs-assumed marked.
-4. **The lean core:** what the project becomes once the darlings are gone.
-5. **Get back on track:** the next 1 to 3 concrete moves, the tests for any
+5. **The lean core:** what the project becomes once the darlings are gone.
+6. **Get back on track:** the next 1 to 3 concrete moves, the tests for any
    PARKED items, ordered by impact.
 
 ### Step 6: Explain, save, and remember

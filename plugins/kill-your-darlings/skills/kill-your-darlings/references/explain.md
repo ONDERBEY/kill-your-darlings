@@ -43,6 +43,9 @@ alike.
 Keep it to a tight shape:
 
 - **Goal:** one line.
+- **What the world says:** one or two lines of outside-view insight (reception,
+  demand, forecast, or precedent) that backs the call. This is the part that
+  carries real research, not just your read of the files.
 - **The call, in one sentence.** Plain. "Cut the 3D hero."
 - **Why, in one or two lines.** Tied to the goal and one piece of evidence.
 - **Before / after**, if it helps: what it looks like now vs after the cut.
@@ -59,8 +62,11 @@ verdict, laid out with the principles above.
 How to produce it:
 
 1. Copy `assets/report-template.html` and fill the marked regions: project name,
-   the goal banner, what is working, one verdict card per darling (set the right
-   `kind` class so the color is correct), the lean core, and next steps.
+   the goal banner, what is working, the **What the world says** insight cards
+   (reception, demand, forecast, precedent, each with a source tag), one verdict
+   card per darling (set the right `kind` class so the color is correct), the
+   lean core, and next steps. The insight cards stay neutral-colored on purpose,
+   so the verdict colors keep their meaning.
 2. Keep it **self-contained**: all CSS inline, no external fonts, scripts, or
    images. It must open from `file://` and also work pasted into a Claude
    artifact with no network.

@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2026-06-25
+
+### Added
+- **The outside view.** The skill now runs a deep search across four lenses on
+  every check and reports the findings: reception (what people said and liked),
+  demand now (what people want today), forecast (where the space is heading), and
+  precedent (what happened to others who tried this). Wired into `SKILL.md`,
+  `references/playbook.md` (new section 3b), `references/explain.md`, and the
+  knowledge base.
+- **Insights in the report.** The HTML template gained a neutral-colored "What
+  the world says" section so outside-view insight shows up in the visual report,
+  not just the chat.
+- **Base rates** in the knowledge base (for example, CB Insights: roughly 42 to
+  43% of startup failures trace to no market need / poor product-market fit) to
+  anchor the precedent lens.
+
 ## [1.1.0] - 2026-06-25
 
 ### Added
