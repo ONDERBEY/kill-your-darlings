@@ -60,6 +60,19 @@ It is adaptive. Code, content, product, design, and business plans each get a
 matching research playbook. See
 [the playbook](plugins/kill-your-darlings/skills/kill-your-darlings/references/playbook.md).
 
+## It learns, and it can show its work
+
+- **Memory.** It reads a running memory at the start and appends what it learned
+  at the end, so it gets to know your blind spots over time (the maker who keeps
+  over-scoping, the one who is sunk-cost attached). Memory lives in your project
+  at `./.kill-your-darlings/`, not buried in the plugin.
+- **Knowledge base.** A living library of darling patterns, the excuses people
+  use to keep them and the honest rebuttals, and where to find real evidence per
+  domain. It grows as it is used.
+- **Plain-language explanations.** When a call is hard or needs buy-in, it can
+  explain the verdict simply, using basic design principles, right in the chat
+  or as a clean one-page HTML report you can open and share.
+
 ## Install
 
 ### As a plugin (recommended)
@@ -124,8 +137,14 @@ kill-your-darlings/
 │       └── skills/
 │           └── kill-your-darlings/
 │               ├── SKILL.md          # the process and the rules
-│               └── references/
-│                   └── playbook.md   # taxonomy, signals, research, rubric
+│               ├── MEMORY.md         # running-memory format + write locations
+│               ├── references/
+│               │   ├── playbook.md   # taxonomy, signals, research, rubric
+│               │   └── explain.md    # plain-language + HTML explain mode
+│               ├── knowledge/
+│               │   └── knowledge-base.md   # living data the skill draws on
+│               └── assets/
+│                   └── report-template.html # clean, responsive HTML report
 ├── .github/workflows/validate.yml    # CI: validates manifests + frontmatter
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md

@@ -39,6 +39,22 @@ Serve the goal, not the ego, and not your own desire to sound smart or kind.
 Every keep and every cut must trace back to one of two things: the stated goal,
 or evidence from the real world. Opinions dressed as verdicts are banned.
 
+## Memory and knowledge (read first, write last)
+
+This skill learns. It carries a knowledge base and a running memory.
+
+- **At the start of every session**, read `knowledge/knowledge-base.md` (the
+  darling pattern catalog, rationalization rebuttals, and evidence-source map)
+  and the active memory (see `MEMORY.md` for where it lives). Past patterns and
+  this maker's known blind spots sharpen the current call.
+- **At the end of every session**, append what you learned to the runtime memory
+  and, if it generalizes, promote it into the knowledge base. See `MEMORY.md` for
+  the format and write locations.
+
+You may generate the markdown and HTML files a session needs (audit reports,
+memory entries, a visual report). Always write to a writable location, never into
+this plugin's own read-only directory, and always tell the user the exact path.
+
 ## The no-assumption gate (read before any verdict)
 
 You may not judge what you have not grounded. Before any keep/cut call:
@@ -124,6 +140,17 @@ Output, in this order:
 5. **Get back on track:** the next 1 to 3 concrete moves, the tests for any
    PARKED items, ordered by impact.
 
+### Step 6: Explain, save, and remember
+- **Explain it simply when it helps.** If the verdict is hard, high-stakes, or
+  needs buy-in, switch to explain mode: lay it out with basic design principles,
+  inline or as a clean one-page HTML report. See `references/explain.md` and the
+  template at `assets/report-template.html`.
+- **Save what is worth keeping.** Offer (or, for a large project, just produce)
+  a markdown audit and an HTML report under `./.kill-your-darlings/audits/`.
+- **Update memory.** Append this check to the runtime memory: the goal, the
+  verdicts, the recurring pattern, and the maker's tendency. Promote anything
+  that generalizes into the knowledge base. See `MEMORY.md`.
+
 ## How to deliver it
 - Lead with the verdict, then the reason. No throat-clearing.
 - Be direct and specific. Cut the person's idea, never the person.
@@ -143,5 +170,17 @@ Output, in this order:
 - It treats its own opinion as evidence.
 - It never reaches a verdict (endless "it depends"). PARK with a test instead.
 
-See `references/playbook.md` for the darling taxonomy, detection signals, the
-per-domain research playbook, the verdict rubric, and a worked example.
+## Files this skill maintains
+
+| File | Role |
+|---|---|
+| `SKILL.md` | This file: the process and the rules. |
+| `references/playbook.md` | Methodology: taxonomy, detection signals, per-domain research, verdict rubric, worked example. |
+| `references/explain.md` | Explain mode: basic design principles, inline and HTML formats, file-generation rules. |
+| `knowledge/knowledge-base.md` | Living data: pattern catalog, rebuttals, evidence sources, killed-darlings log. |
+| `MEMORY.md` | Running memory format and write locations (runtime memory lives outside this dir). |
+| `assets/report-template.html` | Self-contained, responsive HTML report template. |
+
+Read `references/playbook.md` for the full methodology, `references/explain.md`
+before producing any explanation or HTML, and `knowledge/knowledge-base.md` plus
+the runtime memory at the start of every session.

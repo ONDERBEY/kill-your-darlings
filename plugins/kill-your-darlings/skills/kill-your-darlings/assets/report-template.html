@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reality Check</title>
+<!--
+  Kill Your Darlings | one-page report template.
+  Fill the regions marked FILL. Self-contained: no external fonts, scripts, or
+  images. Opens from file:// and works pasted into a Claude artifact.
+  Verdict colors are semantic: set each card's class to keep | cut | rework | park.
+-->
+<style>
+  :root{
+    --bg:#ffffff; --surface:#f6f7f9; --text:#16181d; --muted:#5b6270;
+    --line:#e4e7ec; --accent:#16181d;
+    --keep:#1f9d57; --cut:#d93a3a; --rework:#d98a13; --park:#8a909c;
+    --radius:14px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0f1115; --surface:#171a21; --text:#eceef2; --muted:#9aa1ad;
+           --line:#272b34; --accent:#eceef2;
+           --keep:#34c878; --cut:#ff6161; --rework:#f0a83a; --park:#9aa1ad; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:clamp(20px,5vw,48px)}
+  .eyebrow{font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin:0 0 6px}
+  h1{font-size:clamp(1.5rem,5vw,2.1rem); line-height:1.15; margin:0 0 24px}
+  h2{font-size:1.05rem; margin:32px 0 12px; letter-spacing:.01em}
+  p{margin:0 0 12px}
+  .muted{color:var(--muted)}
+
+  /* Goal banner: the single most important thing, on top. */
+  .goal{
+    background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--radius); padding:16px 18px; margin:0 0 8px;
+  }
+  .goal .label{font-size:.75rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin:0 0 4px}
+  .goal .text{font-size:1.1rem; font-weight:600; margin:0}
+
+  /* Working: short, positive, calibrates the cuts. */
+  ul.working{list-style:none; padding:0; margin:0}
+  ul.working li{padding:6px 0 6px 26px; position:relative}
+  ul.working li::before{content:"✓"; position:absolute; left:0; color:var(--keep); font-weight:700}
+
+  /* One card per darling. Left border + badge carry the verdict color. */
+  .card{
+    border:1px solid var(--line); border-left:5px solid var(--line);
+    border-radius:var(--radius); background:var(--surface);
+    padding:16px 18px; margin:0 0 12px;
+  }
+  .card .top{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:6px}
+  .badge{
+    font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    padding:3px 9px; border-radius:999px; color:#fff; white-space:nowrap;
+  }
+  .card .name{font-weight:700}
+  .card .reason{margin:0; color:var(--text)}
+  .tag{font-size:.72rem; color:var(--muted); margin-top:6px; display:inline-block}
+
+  .keep{border-left-color:var(--keep)}    .keep .badge{background:var(--keep)}
+  .cut{border-left-color:var(--cut)}      .cut .badge{background:var(--cut)}
+  .rework{border-left-color:var(--rework)}.rework .badge{background:var(--rework)}
+  .park{border-left-color:var(--park)}    .park .badge{background:var(--park)}
+
+  .core{border:1px dashed var(--line); border-radius:var(--radius); padding:16px 18px; margin:0 0 8px}
+  ol.steps{margin:0; padding-left:20px}
+  ol.steps li{margin:6px 0}
+  footer{margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Reality check</p>
+  <!-- FILL: project / scope name -->
+  <h1>SaaS landing page redesign</h1>
+
+  <!-- FILL: the one-line goal -->
+  <div class="goal">
+    <p class="label">Goal</p>
+    <p class="text">More SMB trial signups this quarter, with no extra engineering budget.</p>
+  </div>
+
+  <h2>What is working</h2>
+  <!-- FILL: 2 to 4 genuinely good things, to calibrate the cuts -->
+  <ul class="working">
+    <li>The headline value prop is sharp and specific.</li>
+    <li>The pricing table is clear and honest.</li>
+  </ul>
+
+  <h2>The kill list</h2>
+  <!-- FILL: one card per darling. Set class to keep | cut | rework | park. -->
+
+  <div class="card cut">
+    <div class="top"><span class="badge">Cut</span><span class="name">Animated 3D hero</span></div>
+    <p class="reason">Adds 2.1s to load on a mid-tier phone, on traffic that is 62% mobile, and pushes the CTA below the fold. No evidence it lifts conversion.</p>
+    <span class="tag">Evidence: verified (staging load test + analytics)</span>
+  </div>
+
+  <div class="card rework">
+    <div class="top"><span class="badge">Rework</span><span class="name">Motion in the hero</span></div>
+    <p class="reason">The wish for life on the page is real. Replace the 3D scene with a lightweight CSS treatment that does not cost load time.</p>
+    <span class="tag">Evidence: verified</span>
+  </div>
+
+  <div class="card park">
+    <div class="top"><span class="badge">Park</span><span class="name">3D as a paid-tier showcase</span></div>
+    <p class="reason">Might earn its place elsewhere. Decide it with one test: a 50/50 split where it must beat control on signups to ship.</p>
+    <span class="tag">Test before deciding</span>
+  </div>
+
+  <div class="card keep">
+    <div class="top"><span class="badge">Keep</span><span class="name">Above-the-fold CTA</span></div>
+    <p class="reason">Load-bearing. Historically your strongest signup driver. Protect it.</p>
+    <span class="tag">Evidence: verified (past A/B history)</span>
+  </div>
+
+  <h2>The lean core</h2>
+  <!-- FILL: what the project becomes once the darlings are gone -->
+  <div class="core">
+    <p>A fast, mostly-static page that leads with the value prop and the CTA above the fold, with light CSS motion for warmth. The 3D idea lives or dies by a single test.</p>
+  </div>
+
+  <h2>Next moves</h2>
+  <!-- FILL: 1 to 3 concrete steps, ordered by impact -->
+  <ol class="steps">
+    <li>Pull the 3D hero; put value prop + CTA above the fold.</li>
+    <li>Add a lightweight CSS accent in place of the animation.</li>
+    <li>Queue the 50/50 test for the 3D idea; ship only if it beats control.</li>
+  </ol>
+
+  <footer>Kill your darlings, even when it breaks your egocentric little scribbler's heart.</footer>
+
+</div>
+</body>
+</html>
