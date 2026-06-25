@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Optional pre-commit hook: runs the local validator before each commit.
+# Enable once with:  git config core.hooksPath .githooks
+exec ./scripts/validate.sh

@@ -145,7 +145,8 @@ kill-your-darlings/
 │               │   └── knowledge-base.md   # living data the skill draws on
 │               └── assets/
 │                   └── report-template.html # clean, responsive HTML report
-├── .github/workflows/validate.yml    # CI: validates manifests + frontmatter
+├── scripts/validate.sh               # no-cost local manifest + frontmatter check
+├── .githooks/pre-commit              # optional: run the validator on commit
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── LICENSE

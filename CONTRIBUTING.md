@@ -32,10 +32,19 @@ maker.
 
 ## Before you open a PR
 
-- Make sure all JSON manifests parse.
-- Make sure every `SKILL.md` has `name` and `description` in its frontmatter.
-- The `validate` GitHub Action checks both on every push and pull request. Green
-  CI is the merge bar.
+Run the validator. It checks that every JSON manifest parses, every `SKILL.md`
+has `name` and `description`, and no em dashes slipped into skill copy:
+
+```
+./scripts/validate.sh
+```
+
+A green run is the merge bar. To run it automatically before each commit, enable
+the bundled hook once:
+
+```
+git config core.hooksPath .githooks
+```
 
 ## Test it locally
 

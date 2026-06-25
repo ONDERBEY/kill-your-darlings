@@ -22,6 +22,11 @@ All notable changes to this project are documented here. The format follows
 - **File generation.** The skill can produce markdown audits and HTML reports
   under `./.kill-your-darlings/audits/`.
 
+### Changed
+- Replaced the GitHub Actions validator with a no-cost local script
+  (`scripts/validate.sh`) and an optional pre-commit hook (`.githooks/`), so
+  validation never depends on billed CI minutes.
+
 ## [1.0.0] - 2026-06-25
 
 ### Added
