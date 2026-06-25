@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reality Check</title>
 <!--
-  Kill Your Darlings | one-page report template.
+  Kill Your Darlings | one-page report template (Jurassic Park theme).
   Fill the regions marked FILL. Self-contained: no external fonts, scripts, or
   images. Opens from file:// and works pasted into a Claude artifact.
   Verdict colors are semantic: set each card's class to keep | cut | rework | park.
+  The amber (--jp) is brand chrome only, so the verdict colors keep their meaning.
 -->
 <style>
   :root{
     --bg:#ffffff; --surface:#f6f7f9; --text:#16181d; --muted:#5b6270;
     --line:#e4e7ec; --accent:#16181d;
     --keep:#1f9d57; --cut:#d93a3a; --rework:#d98a13; --park:#8a909c;
-    --radius:14px;
+    --jp:#c8841a; --radius:14px;
   }
   @media (prefers-color-scheme:dark){
-    :root{ --bg:#0f1115; --surface:#171a21; --text:#eceef2; --muted:#9aa1ad;
-           --line:#272b34; --accent:#eceef2;
-           --keep:#34c878; --cut:#ff6161; --rework:#f0a83a; --park:#9aa1ad; }
+    :root{ --bg:#0d0f0c; --surface:#171a16; --text:#eceee8; --muted:#9aa192;
+           --line:#2a2e26; --accent:#eceee8;
+           --keep:#34c878; --cut:#ff6161; --rework:#f0a83a; --park:#9aa192;
+           --jp:#e8b23a; }
   }
   *{box-sizing:border-box}
   body{
@@ -29,24 +31,30 @@
     line-height:1.55; -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:720px; margin:0 auto; padding:clamp(20px,5vw,48px)}
+
+  /* Brand chrome: dino mark + hazard rule, Jurassic-Park flavored. */
+  .brand{display:flex; align-items:center; gap:10px; margin:0 0 12px}
+  .dino{width:44px; height:auto; flex:none; fill:var(--jp)}
+  .brandname{font-weight:800; letter-spacing:.04em; font-size:.95rem; color:var(--jp); text-transform:uppercase}
+  .hazard{height:6px; border-radius:3px; margin:0 0 22px;
+    background:repeating-linear-gradient(45deg, var(--jp) 0 11px, transparent 11px 22px)}
+
   .eyebrow{font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin:0 0 6px}
-  h1{font-size:clamp(1.5rem,5vw,2.1rem); line-height:1.15; margin:0 0 24px}
-  h2{font-size:1.05rem; margin:32px 0 12px; letter-spacing:.01em}
+  h1{font-size:clamp(1.5rem,5vw,2.1rem); line-height:1.15; margin:0 0 14px}
+  .epigraph{font-style:italic; color:var(--muted); border-left:3px solid var(--jp); padding-left:12px; margin:0 0 26px; font-size:.95rem}
+  .epigraph span{display:block; font-style:normal; font-size:.78rem; margin-top:4px}
+  h2{font-size:1.05rem; margin:32px 0 12px; letter-spacing:.01em; padding-left:11px; border-left:3px solid var(--jp)}
   p{margin:0 0 12px}
-  .muted{color:var(--muted)}
 
   /* Goal banner: the single most important thing, on top. */
-  .goal{
-    background:var(--surface); border:1px solid var(--line);
-    border-radius:var(--radius); padding:16px 18px; margin:0 0 8px;
-  }
+  .goal{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin:0 0 8px}
   .goal .label{font-size:.75rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin:0 0 4px}
   .goal .text{font-size:1.1rem; font-weight:600; margin:0}
 
   /* Outside view: neutral cards on purpose, so verdict colors keep their meaning. */
   .insights{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 0 8px}
   .insight{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:12px 14px}
-  .insight .k{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
+  .insight .k{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--jp); margin:0 0 4px; font-weight:700}
   .insight .v{margin:0; font-size:.95rem}
   .insight .src{font-size:.7rem; color:var(--muted); margin-top:6px; display:inline-block}
   @media (max-width:520px){ .insights{grid-template-columns:1fr} }
@@ -57,16 +65,9 @@
   ul.working li::before{content:"✓"; position:absolute; left:0; color:var(--keep); font-weight:700}
 
   /* One card per darling. Left border + badge carry the verdict color. */
-  .card{
-    border:1px solid var(--line); border-left:5px solid var(--line);
-    border-radius:var(--radius); background:var(--surface);
-    padding:16px 18px; margin:0 0 12px;
-  }
+  .card{border:1px solid var(--line); border-left:5px solid var(--line); border-radius:var(--radius); background:var(--surface); padding:16px 18px; margin:0 0 12px}
   .card .top{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:6px}
-  .badge{
-    font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
-    padding:3px 9px; border-radius:999px; color:#fff; white-space:nowrap;
-  }
+  .badge{font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; color:#fff; white-space:nowrap}
   .card .name{font-weight:700}
   .card .reason{margin:0; color:var(--text)}
   .tag{font-size:.72rem; color:var(--muted); margin-top:6px; display:inline-block}
@@ -80,14 +81,26 @@
   ol.steps{margin:0; padding-left:20px}
   ol.steps li{margin:6px 0}
   footer{margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; font-style:italic}
+  footer span{display:block; font-style:normal; margin-top:4px; font-size:.78rem}
 </style>
 </head>
 <body>
 <div class="wrap">
 
+  <div class="brand">
+    <svg class="dino" viewBox="0 0 230 150" aria-hidden="true">
+      <path d="M 8 108 C 40 104 64 100 86 92 C 92 72 98 60 112 52 C 116 40 122 30 134 26 C 146 18 164 12 188 14 L 214 18 L 222 30 L 196 33 L 214 46 L 188 46 C 176 50 170 58 168 70 C 167 78 168 86 170 92 L 178 138 L 158 138 L 154 96 L 142 100 L 124 140 L 102 140 L 110 96 C 80 104 44 108 8 108 Z"/>
+      <path d="M 170 74 L 156 82 L 168 86 Z"/>
+    </svg>
+    <span class="brandname">Kill Your Darlings</span>
+  </div>
+  <div class="hazard"></div>
+
   <p class="eyebrow">Reality check</p>
   <!-- FILL: project / scope name -->
   <h1>SaaS landing page redesign</h1>
+  <p class="epigraph">"They were so preoccupied with whether they could, they didn't stop to think if they should."
+    <span>Dr. Ian Malcolm, Jurassic Park. The first rule of a darling: just because you can build it does not mean it earns its place.</span></p>
 
   <!-- FILL: the one-line goal -->
   <div class="goal">
@@ -168,7 +181,8 @@
     <li>Queue the 50/50 test for the 3D idea; ship only if it beats control.</li>
   </ol>
 
-  <footer>Kill your darlings, even when it breaks your egocentric little scribbler's heart.</footer>
+  <footer>"Kill your darlings, even when it breaks your egocentric little scribbler's heart."
+    <span>Stephen King, On Writing</span></footer>
 
 </div>
 </body>

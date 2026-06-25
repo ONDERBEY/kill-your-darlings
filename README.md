@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.png" alt="Kill Your Darlings" width="100%">
+</p>
+
 # Kill Your Darlings
 
 > "Kill your darlings, kill your darlings, even when it breaks your egocentric
@@ -173,6 +177,14 @@ Art of Writing* (around 1913 to 1916). Stephen King gave it the phrasing in the
 epigraph above in *On Writing* (2000). It is often misattributed to Faulkner,
 who did not write it. This skill just points the same blade at projects instead
 of prose.
+
+The visual identity nods to *Jurassic Park* (Steven Spielberg, 1993, from
+Michael Crichton's novel). In the spirit of the skill: that is not a Stephen King
+work, so it is not, strictly, a piece by the quote's owner. It earns its place
+anyway, because the film is the perfect cautionary tale for an unkilled darling.
+"Your scientists were so preoccupied with whether they could, they didn't stop
+to think if they should" is the whole lesson in one line: the most beloved idea,
+shipped without a reality check, is the one that eats the park.
 
 ## License
 

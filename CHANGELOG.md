@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.3.0] - 2026-06-25
+
+### Added
+- **Visual identity (Jurassic Park theme).** A repo banner (`docs/banner.png`,
+  source `docs/banner.svg`) with an original T. rex silhouette, hazard striping,
+  and the Ian Malcolm line, so the repo opens with a work that fits the concept.
+- **Themed HTML report.** The report template now carries the same identity
+  (dino mark, hazard rule, amber chrome, the Malcolm epigraph framed as "the
+  first rule of a darling"), while keeping the clean layout and the semantic
+  keep/cut/rework/park colors intact.
+
+### Changed
+- **Outside view is now core.** The deep-search outside view (reception, demand,
+  forecast, precedent) is stated as part of the skill's core identity in
+  `SKILL.md`, not an optional research step.
+
 ## [1.2.0] - 2026-06-25
 
 ### Added

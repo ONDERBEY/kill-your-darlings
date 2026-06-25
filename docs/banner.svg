@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Kill Your Darlings">
+  <defs>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4C544"/>
+      <stop offset="1" stop-color="#C8841A"/>
+    </linearGradient>
+    <pattern id="haz" width="48" height="48" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="48" height="48" fill="#0d0f0c"/>
+      <rect width="24" height="48" fill="#E8B23A"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.28" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#1c2417"/>
+      <stop offset="1" stop-color="#0d0f0c"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="9" fill="url(#haz)"/>
+  <rect x="0" y="391" width="1200" height="9" fill="url(#haz)"/>
+
+  <!-- Original T. rex silhouette (facing right), evoking the concept, not any logo -->
+  <g transform="translate(58,60) scale(1.16)" fill="url(#amber)">
+    <path d="M 8 108
+      C 40 104 64 100 86 92
+      C 92 72 98 60 112 52
+      C 116 40 122 30 134 26
+      C 146 18 164 12 188 14
+      L 214 18 L 222 30 L 196 33 L 214 46 L 188 46
+      C 176 50 170 58 168 70
+      C 167 78 168 86 170 92
+      L 178 138 L 158 138 L 154 96
+      L 142 100 L 124 140 L 102 140 L 110 96
+      C 80 104 44 108 8 108 Z"/>
+    <path d="M 170 74 L 156 82 L 168 86 Z"/>
+    <circle cx="198" cy="28" r="3.6" fill="#0d0f0c"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="Verdana, Geneva, -apple-system, Segoe UI, sans-serif">
+    <text x="430" y="148" font-size="92" font-weight="800" letter-spacing="1" fill="#F4F1E8">KILL YOUR</text>
+    <text x="430" y="246" font-size="92" font-weight="800" letter-spacing="1" fill="url(#amber)">DARLINGS</text>
+    <text x="436" y="298" font-size="26" fill="#b9bdb0">A reality check for the ideas you are too in love with.</text>
+    <text x="436" y="344" font-size="21" font-style="italic" fill="#E8B23A">"...they didn't stop to think if they should."</text>
+    <text x="436" y="372" font-size="16" fill="#8b8f84">Dr. Ian Malcolm, Jurassic Park</text>
+  </g>
+</svg>
