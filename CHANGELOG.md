@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.12.0] - 2026-06-26
+
+### Changed
+- **Theropod track mark, redrawn from a real footprint reference.** Reworked the
+  mark into a proper three-toed track: distinct splayed toes with claw tips over
+  a metatarsal heel pad, instead of the earlier thin "crown" shape. The drawing is
+  original (our own paths, gold gradient); a licensed stock fossil illustration was
+  used only as a visual reference and is not embedded or redistributed, to stay
+  clear of its stock license (no source-file redistribution, no logo use).
+  Regenerated `docs/marks.png` to match.
+
 ## [1.11.0] - 2026-06-26
 
 ### Fixed
