@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.11.0] - 2026-06-26
+
+### Fixed
+- **Theropod track mark.** The old `theropod-track.svg` read as a flower or paw
+  (three rounded blobs on a round base). Redrawn as a real three-toed predator
+  footprint: slender splayed claws over a heel pad. Regenerated the `docs/marks.png`
+  showcase so all three marks match.
+
 ## [1.10.0] - 2026-06-26
 
 ### Added
