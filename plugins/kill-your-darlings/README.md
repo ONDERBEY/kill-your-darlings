@@ -29,8 +29,18 @@ kill-your-darlings/
 └── skills/
     └── kill-your-darlings/
         ├── SKILL.md            # core process and rules
-        └── references/
-            └── playbook.md     # taxonomy, signals, research playbook, rubric
+        ├── MEMORY.md           # running-memory format + write locations
+        ├── references/
+        │   ├── playbook.md     # taxonomy, signals, research playbook, rubric
+        │   └── explain.md      # plain-language + HTML explain mode
+        ├── knowledge/
+        │   └── knowledge-base.md   # living darling patterns, rebuttals, sources
+        ├── assets/
+        │   └── report-template.html  # self-contained HTML report
+        ├── evals/
+        │   └── evals.json      # trigger + output test cases
+        └── examples/
+            └── saas-landing-reality-check.md  # a worked run
 ```
 
 ## Invoke it

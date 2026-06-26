@@ -4,6 +4,27 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.9.0] - 2026-06-26
+
+### Changed
+- **Pre-approved the tools the skill actually depends on.** `allowed-tools` now
+  also lists `Write` and `Skill`. The skill's core promises (persisting memory to
+  `./.kill-your-darlings/`, saving the MD audit and the HTML report, handing a
+  hard lens to the `deep-research` / firecrawl skills) all need these. Without the
+  pre-approval those steps hit a permission prompt every time, which undercut the
+  frictionless auto-research the v1.6.0 grant set out to deliver. (`allowed-tools`
+  is a permission allowlist, not a hard restriction, so unlisted tools such as the
+  live-Chrome MCP servers still work on demand; they are left to prompt because
+  they are environment-specific and framed as a graceful upgrade.)
+
+### Fixed
+- **Stale plugin README.** `plugins/kill-your-darlings/README.md` listed only
+  `SKILL.md` + `playbook.md`; the "What is inside" tree now reflects the full
+  shipped skill (memory, explain mode, knowledge base, report template, evals,
+  worked example).
+- **Description drift.** Both manifests now include "roadmap" in the target list,
+  matching the README and SKILL.md phrasing.
+
 ## [1.8.0] - 2026-06-26
 
 ### Changed

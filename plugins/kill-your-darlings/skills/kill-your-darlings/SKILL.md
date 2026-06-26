@@ -18,7 +18,7 @@ description: >-
   den Boden".
 argument-hint: "[what to reality-check]"
 license: MIT
-allowed-tools: Read, Grep, Glob, WebSearch, WebFetch
+allowed-tools: Read, Grep, Glob, WebSearch, WebFetch, Write, Skill
 ---
 
 # Kill Your Darlings
