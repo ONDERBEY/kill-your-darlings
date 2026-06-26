@@ -40,6 +40,31 @@ trend is heading, and what happened to others who tried it) and weighs every
 darling against that. A reality check without the outside view is just a louder
 opinion.
 
+## On activation (run this, in order, before you answer)
+
+The moment this skill is invoked, start working. Do not narrate that you are
+about to; do it. Do not ask permission to research.
+
+1. **Lock the target and the goal.** What exactly is under review, and what is
+   success (for whom, what outcome, by when, what hard constraint)? If the user
+   named a target, proceed. If it is genuinely unclear, ask ONE scoping question,
+   then continue. Never ask more than one.
+2. **Load memory and knowledge.** Read `knowledge/knowledge-base.md` and the
+   runtime memory (see `MEMORY.md`).
+3. **Read the actual materials.** Open the real files, draft, data, or page.
+   Never reason from a summary or from how it "probably" looks.
+4. **Run the deep search now.** Actually call WebSearch / firecrawl / live Chrome
+   and work the outside view across all four lenses (reception, demand, forecast,
+   precedent), at least one real lookup per lens that applies. Answering from
+   training memory instead of searching is the exact failure this skill exists to
+   prevent.
+5. **Only now** inventory the darlings, stress-test them, and deliver the verdict.
+
+A verdict that arrives before steps 3 and 4 have actually happened is invalid.
+The single exception is one trivial element (a line, a button): a lighter pass is
+fine, but still mark verified vs assumed. Everything else gets the full pipeline
+below.
+
 ## Prime directive
 
 Serve the goal, not the ego, and not your own desire to sound smart or kind.
@@ -50,10 +75,11 @@ or evidence from the real world. Opinions dressed as verdicts are banned.
 
 This skill learns. It carries a knowledge base and a running memory.
 
-- **At the start of every session**, read `knowledge/knowledge-base.md` (the
-  darling pattern catalog, rationalization rebuttals, and evidence-source map)
-  and the active memory (see `MEMORY.md` for where it lives). Past patterns and
-  this maker's known blind spots sharpen the current call.
+- **The moment the skill is invoked** (see On activation), read
+  `knowledge/knowledge-base.md` (the darling pattern catalog, rationalization
+  rebuttals, and evidence-source map) and the active memory (see `MEMORY.md` for
+  where it lives). Past patterns and this maker's known blind spots sharpen the
+  current call.
 - **At the end of every session**, append what you learned to the runtime memory
   and, if it generalizes, promote it into the knowledge base. See `MEMORY.md` for
   the format and write locations.
@@ -111,7 +137,9 @@ Use WebSearch and the firecrawl skills for general web evidence. Use real Chrome
 (Claude in Chrome / Control Chrome / chrome-devtools) for live state, logged-in
 data, or sources that block bots. Use domain data sources (analytics, CRM,
 tickets, SERP/keyword tools) when the project has them. See references/playbook.md
-for the per-domain research playbook.
+for the per-domain research playbook. This step is not optional: actually call
+the tools and run the searches. If you find yourself writing a verdict without
+having run a single search, stop and go research.
 
 **Always take the outside view.** Reading only the maker's own materials is half
 blind. Run a deep search across four lenses and report what you find:

@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.5.0] - 2026-06-26
+
+### Changed
+- **Auto-start activation protocol.** Added an imperative "On activation" section
+  at the top of `SKILL.md` so the skill fires the moment it is invoked: lock the
+  target and goal (ask at most one question), load memory and knowledge, read the
+  real materials, and actually run the deep-search outside view across all four
+  lenses before any verdict. A verdict produced before the research has run is
+  declared invalid. Hardened Step 2 and the memory wording from descriptive to
+  imperative so the deep search is not skipped or answered from memory.
+
 ## [1.4.0] - 2026-06-26
 
 ### Changed
