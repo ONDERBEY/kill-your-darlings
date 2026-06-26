@@ -186,7 +186,7 @@ The repo ships three marks, all gold-on-dark self-contained SVGs in
 ![Marks](docs/marks.png)
 
 - **Tyrannosaurus:** the predator, and the default mark.
-- **Mosquito in amber:** the darling, preserved instead of killed.
+- **Mosquito in amber:** the real darling, preserved instead of killed.
 - **Theropod track:** what it leaves behind.
 
 ## Credit
