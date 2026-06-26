@@ -183,7 +183,7 @@ runner, a "second opinion" panel) under `plugins/` and list them in
 The repo ships three marks, all gold-on-dark self-contained SVGs in
 [`docs/marks/`](docs/marks). Swap the one in the banner or the report to taste.
 
-![Marks](docs/marks.png)
+![Marks](docs/marks.png?v=2)
 
 - **Tyrannosaurus:** the predator, and the default mark.
 - **Mosquito in amber:** the real darling, preserved instead of killed.
