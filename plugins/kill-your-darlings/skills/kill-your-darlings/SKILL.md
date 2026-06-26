@@ -1,13 +1,14 @@
 ---
 name: kill-your-darlings
 description: >-
-  Reality-check and "kill your darlings" partner for any project, plan, draft,
-  feature, roadmap, or pitch. Use when the user is over-attached to an idea, a
-  project has drifted into wishful thinking, scope is bloating, or they ask to be
-  grounded, challenged, or told the honest truth. It anchors the real goal, reads
-  the actual materials (no assumptions), researches the real world (web search +
-  live Chrome instead of guessing), names the ego-driven darlings, and returns an
-  evidence-backed keep/cut/rework verdict plus a get-back-on-track plan. Triggers
+  The reality-check that does not just argue with you, it checks. Instead of a
+  louder opinion, it researches the real world (web search and a live browser for
+  reception, demand, forecast, and precedent), names the ideas you are too
+  attached to, and returns an evidence-backed keep/cut/rework/park verdict plus a
+  get-back-on-track plan. A "kill your darlings" partner for any project, plan,
+  draft, feature, roadmap, or pitch. Use when the user is over-attached to an
+  idea, a project has drifted into wishful thinking, scope is bloating, or they
+  ask to be grounded, challenged, or told the honest truth. Triggers
   (EN) "kill my darlings", "reality check", "gut check", "be brutally honest",
   "am I deluding myself", "should I cut this", "play devil's advocate", "ground
   me", "is this worth building", "talk me out of it". (TR) "gercekci ol",

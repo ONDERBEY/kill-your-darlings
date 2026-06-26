@@ -9,6 +9,9 @@
 
 A Claude Code skill that does the one thing your tools, your teammates, and your
 own brain are all too polite to do: tell you which parts of your project to cut.
+And unlike a devil's-advocate prompt, it does not just argue with you, it checks:
+it researches the real world (reception, demand, forecast, precedent) before it
+rules.
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-8A63D2.svg)

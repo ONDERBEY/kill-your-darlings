@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.8.0] - 2026-06-26
+
+### Changed
+- **Sharper positioning** (from a competitive scan: the space is full of
+  devil's-advocate / pre-mortem / red-team skills). The description now leads with
+  the one thing that sets this apart: it does not just argue, it checks, running
+  live research across reception, demand, forecast, and precedent before it rules.
+  Updated the SKILL.md description, both manifests, and the README lead.
+
 ## [1.7.0] - 2026-06-26
 
 ### Added
