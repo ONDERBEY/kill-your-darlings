@@ -1,0 +1,69 @@
+{
+  "skill_name": "kill-your-darlings",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Reality-check my SaaS landing page redesign. I added an animated 3D hero that I love. The current markup is in evals/files/landing-snippet.html.",
+      "expected_output": "An evidence-backed reality check: a one-line goal, outside-view findings across reception/demand/forecast/precedent, a per-darling KEEP/CUT/REWORK/PARK verdict (the 3D hero is a prime candidate), a lean core, and concrete next moves.",
+      "files": ["evals/files/landing-snippet.html"],
+      "assertions": [
+        "States a one-line goal (for whom and what outcome) before any verdict",
+        "Reports outside-view findings across all four lenses: reception, demand, forecast, and precedent",
+        "Tags each load-bearing finding as verified (with a source) or assumed",
+        "Gives a KEEP, CUT, REWORK, or PARK verdict for the 3D hero with a one-line reason tied to the goal or evidence",
+        "Ends with a lean core and 1 to 3 concrete next moves",
+        "Contains no em dash characters"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "su yeni feature fikrimi gercekci degerlendir, bence harika ama emin degilim: kullanicilarin kendi temalarini kodlayabildigi bir tema editoru.",
+      "expected_output": "A Turkish-language reality check that anchors the goal, brings outside-view evidence, and gives a verdict on the theme-editor idea instead of cheerleading.",
+      "files": [],
+      "assertions": [
+        "The response is written in Turkish",
+        "States the goal the idea is being judged against",
+        "Brings at least one outside-view finding (reception, demand, forecast, or precedent), tagged verified or assumed",
+        "Reaches a KEEP, CUT, REWORK, or PARK verdict rather than only listing pros and cons",
+        "Contains no em dash characters"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "sei ehrlich zu meinem Investoren-Pitch-Deck: soll ich die 10-Jahres-Vision-Folie streichen?",
+      "expected_output": "A German-language verdict on the vision slide, grounded in what investors actually respond to (precedent/reception), not a generic opinion.",
+      "files": [],
+      "assertions": [
+        "The response is written in German",
+        "Names the goal of the deck before judging the slide",
+        "Cites at least one precedent or reception signal, tagged verified or assumed",
+        "Reaches a clear KEEP, CUT, REWORK, or PARK verdict on the slide with a reason",
+        "Contains no em dash characters"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "kill my darlings",
+      "expected_output": "With no target given, the skill should establish what to review by asking a single scoping question, not produce a generic verdict.",
+      "files": [],
+      "assertions": [
+        "Asks exactly one scoping question about what to reality-check and what success means",
+        "Does not deliver a full verdict or kill list before a target is known",
+        "Does not ask more than one question"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Gut-check this: we're building an internal tool, codenamed Atlas, that auto-generates onboarding checklists for our own ops team. No public footprint. Is it worth finishing?",
+      "expected_output": "A reality check that runs the outside view, finds little or no external signal for a private internal tool, says so honestly, lowers confidence, and reasons from first principles plus a cheap test instead of inventing evidence.",
+      "files": [],
+      "assertions": [
+        "Attempts the outside-view research and explicitly states when no external signal is found rather than fabricating sources",
+        "Lowers or qualifies its confidence given the thin external evidence",
+        "Falls back to first-principles reasoning and proposes at least one cheap test to decide it",
+        "Reaches a KEEP, CUT, REWORK, or PARK verdict or a PARK-with-test",
+        "Contains no em dash characters"
+      ]
+    }
+  ]
+}

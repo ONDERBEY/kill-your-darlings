@@ -77,6 +77,35 @@ How to produce it:
    - Save to `./.kill-your-darlings/audits/<slug>.html` and tell the user the
      path so they can open or share it.
 
+## Localize the report
+
+The template ships with English chrome labels, but the report must be in the
+reader's language (the skill targets EN, TR, and DE). When you fill the template,
+translate the fixed labels. Use this table; keep the verdict colors unchanged.
+
+| EN | TR | DE |
+|---|---|---|
+| Reality check | Gerçeklik kontrolü | Realitätscheck |
+| Goal | Hedef | Ziel |
+| What the world says | Dünya ne diyor | Was die Welt sagt |
+| Reception | Karşılanma | Resonanz |
+| Demand now | Şu anki talep | Nachfrage jetzt |
+| Forecast | Öngörü | Prognose |
+| Precedent | Emsal | Präzedenzfall |
+| What is working | İşleyen ne | Was funktioniert |
+| The kill list | Kesim listesi | Die Streichliste |
+| Keep | Tut | Behalten |
+| Cut | Kes | Streichen |
+| Rework | Yeniden kurgula | Überarbeiten |
+| Park | Beklet | Zurückstellen |
+| The lean core | Yalın çekirdek | Der schlanke Kern |
+| Next moves | Sonraki adımlar | Nächste Schritte |
+| verified | doğrulandı | verifiziert |
+| assumed | varsayıldı | angenommen |
+
+Also set `<html lang>` to match (`tr`, `de`, or `en`). The body content (goal,
+findings, verdicts) is always written in the reader's language regardless.
+
 ## File generation rules
 
 The skill can write the MD and HTML files a session needs. Keep them tidy:

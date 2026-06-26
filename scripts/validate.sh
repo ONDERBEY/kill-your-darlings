@@ -24,6 +24,8 @@ for plug in pathlib.Path("plugins").glob("*"):
     if m.exists():
         d = load(str(m))
         if d is not None and not d.get("name"): errors.append(f"{m}: missing 'name'")
+for ev in pathlib.Path(".").rglob("evals.json"):
+    load(str(ev))
 if errors:
     print("\n".join(errors)); sys.exit(1)
 print("  manifests OK")

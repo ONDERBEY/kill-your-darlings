@@ -153,8 +153,12 @@ kill-your-darlings/
 │               │   └── explain.md    # plain-language + HTML explain mode
 │               ├── knowledge/
 │               │   └── knowledge-base.md   # living data the skill draws on
-│               └── assets/
-│                   └── report-template.html # clean, responsive HTML report
+│               ├── assets/
+│               │   └── report-template.html # clean, responsive HTML report
+│               ├── evals/
+│               │   └── evals.json     # trigger + output test cases (skill-creator)
+│               └── examples/
+│                   └── saas-landing-reality-check.md  # a worked run
 ├── scripts/validate.sh               # no-cost local manifest + frontmatter check
 ├── .githooks/pre-commit              # optional: run the validator on commit
 ├── CHANGELOG.md

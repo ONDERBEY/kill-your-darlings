@@ -1,0 +1,25 @@
+<!-- Fixture for eval 1: a landing page whose hero is a heavy 3D animation. -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Acme Analytics</title></head>
+<body>
+  <header>
+    <!-- The maker's darling: a full-screen animated 3D scene above everything -->
+    <section class="hero hero-3d">
+      <canvas id="three-canvas" data-scene="rotating-dashboard.glb"></canvas>
+      <script src="/vendor/three.min.js"></script>
+      <script src="/scenes/hero-3d.js"></script>
+    </section>
+
+    <section class="value-prop">
+      <h1>Acme Analytics turns raw events into board-ready dashboards in minutes.</h1>
+      <a class="cta" href="/signup">Start free trial</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="pricing"><!-- clear, three-tier pricing table --></section>
+    <section class="logos"><!-- customer logos --></section>
+  </main>
+</body>
+</html>

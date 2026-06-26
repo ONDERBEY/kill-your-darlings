@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.7.0] - 2026-06-26
+
+### Added
+- **Evals** (`evals/evals.json`, Agent Skills format) with five cases:
+  full-pipeline EN, casual TR, German pitch slide, bare invocation (must ask one
+  scoping question), and a no-external-signal internal tool. Plus `evals/README.md`
+  on running them with skill-creator and a `landing-snippet.html` fixture.
+- **Worked example** (`examples/saas-landing-reality-check.md`): a full run
+  showing the output shape, doubling as documentation and an eval reference.
+- **Report localization** (`references/explain.md`): an EN/TR/DE label table so
+  the HTML report chrome is rendered in the reader's language, not just English.
+
+### Changed
+- `scripts/validate.sh` now also parses any `evals.json` so a broken eval file
+  fails the check.
+
 ## [1.6.0] - 2026-06-26
 
 ### Added
