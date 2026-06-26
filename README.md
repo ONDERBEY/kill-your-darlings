@@ -170,6 +170,17 @@ voice, harden the cuts, or add sibling skills (a "scope referee", a "pre-mortem"
 runner, a "second opinion" panel) under `plugins/` and list them in
 `marketplace.json`. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Marks
+
+The repo ships three marks, all gold-on-dark self-contained SVGs in
+[`docs/marks/`](docs/marks). Swap the one in the banner or the report to taste.
+
+![Marks](docs/marks.png)
+
+- **Tyrannosaurus:** the predator, and the default mark.
+- **Mosquito in amber:** the darling, preserved instead of killed.
+- **Theropod track:** what it leaves behind.
+
 ## Credit
 
 The advice is old. Arthur Quiller-Couch wrote "murder your darlings" in *On the
@@ -185,6 +196,10 @@ anyway, because the film is the perfect cautionary tale for an unkilled darling.
 "Your scientists were so preoccupied with whether they could, they didn't stop
 to think if they should" is the whole lesson in one line: the most beloved idea,
 shipped without a reality check, is the one that eats the park.
+
+The T. rex silhouette is CC0 / public domain (Wikimedia Commons,
+*Tyrannosaurus_silhouette.svg*). No attribution is required; it is credited here
+anyway, because killing your darlings does not mean killing your sources.
 
 ## License
 

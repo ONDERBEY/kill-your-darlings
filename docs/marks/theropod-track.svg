@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180" role="img" aria-label="Theropod track mark">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4C544"/><stop offset="1" stop-color="#C8841A"/></linearGradient></defs>
+  <g fill="url(#a)">
+    <path d="M100 150 C 78 150 64 138 64 120 C 64 104 78 96 100 96 C 122 96 136 104 136 120 C 136 138 122 150 100 150 Z"/>
+    <path d="M96 104 C 90 70 86 40 92 22 C 96 10 104 10 108 22 C 114 40 110 70 104 104 Z"/>
+    <path d="M70 112 C 50 92 34 72 28 54 C 24 42 32 36 42 42 C 60 54 78 84 86 112 Z"/>
+    <path d="M130 112 C 150 92 166 72 172 54 C 176 42 168 36 158 42 C 140 54 122 84 114 112 Z"/>
+  </g>
+</svg>

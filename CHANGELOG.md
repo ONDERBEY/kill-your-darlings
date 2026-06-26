@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.4.0] - 2026-06-26
+
+### Changed
+- **Real T. rex mark.** Replaced the hand-drawn dinosaur (which read more iguana
+  than rex) with a proper CC0 / public-domain Tyrannosaurus silhouette from
+  Wikimedia Commons, used in the banner and the report header.
+
+### Added
+- **Three marks** in [`docs/marks/`](docs/marks): `trex.svg` (default),
+  `mosquito-amber.svg` (the darling preserved instead of killed), and
+  `theropod-track.svg`, plus a showcase image (`docs/marks.png`) in the README.
+
 ## [1.3.0] - 2026-06-25
 
 ### Added

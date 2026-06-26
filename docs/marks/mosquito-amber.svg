@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180" role="img" aria-label="Mosquito in amber mark">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4C544"/><stop offset="1" stop-color="#C8841A"/></linearGradient></defs>
+  <path fill="url(#a)" d="M100 14 C 138 14 164 44 168 84 C 171 120 150 166 100 168 C 52 166 31 122 33 86 C 35 46 62 14 100 14 Z"/>
+  <g stroke="#0d0f0c" fill="none" stroke-linecap="round">
+    <path d="M104 74 C 138 52 150 70 120 96" fill="#0d0f0c" fill-opacity="0.30" stroke-width="1.6"/>
+    <path d="M96 74 C 62 52 50 70 80 96" fill="#0d0f0c" fill-opacity="0.30" stroke-width="1.6"/>
+    <path d="M92 104 C 70 116 60 132 48 150" stroke-width="2.4"/>
+    <path d="M90 100 C 64 104 46 110 30 118" stroke-width="2.4"/>
+    <path d="M94 108 C 78 128 70 142 64 158" stroke-width="2.4"/>
+    <path d="M108 104 C 130 116 140 132 152 150" stroke-width="2.4"/>
+    <path d="M110 100 C 136 104 154 110 170 118" stroke-width="2.4"/>
+    <path d="M106 108 C 122 128 130 142 136 158" stroke-width="2.4"/>
+  </g>
+  <g fill="#0d0f0c"><ellipse cx="100" cy="104" rx="9" ry="30"/><circle cx="100" cy="70" r="9"/><rect x="98.5" y="40" width="3" height="26" rx="1.5"/></g>
+</svg>
