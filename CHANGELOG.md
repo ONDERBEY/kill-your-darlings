@@ -4,6 +4,24 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.6.0] - 2026-06-26
+
+### Added
+- **`allowed-tools` frontmatter** (Read, Grep, Glob, WebSearch, WebFetch) so the
+  deep-search the skill depends on runs without a permission prompt on every
+  lookup. Without this, the auto-start research stalls behind approvals.
+- **`argument-hint` and `license`** frontmatter for polish and autocomplete.
+
+### Changed
+- **Graceful tool degradation.** The skill now states that WebSearch and WebFetch
+  are the always-available baseline for the outside view; firecrawl, live Chrome,
+  and the `deep-research` skill are upgrades, not requirements.
+- **No-signal handling.** If a search returns no external signal (new, private,
+  or niche project), the skill says so, lowers confidence, and reasons from first
+  principles plus one cheap test instead of inventing evidence.
+- **Effort scaling.** Research depth now scales to the stakes (a tweet vs a
+  company pivot), beyond the single trivial-element exception.
+
 ## [1.5.0] - 2026-06-26
 
 ### Changed

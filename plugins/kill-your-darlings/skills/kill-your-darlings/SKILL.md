@@ -15,6 +15,9 @@ description: >-
   kessem mi", "fazlaliklari at", "beni hayalden cikar", "projeyi yoluna sok".
   (DE) "sei ehrlich", "Realitaetscheck", "soll ich das streichen", "hol mich auf
   den Boden".
+argument-hint: "[what to reality-check]"
+license: MIT
+allowed-tools: Read, Grep, Glob, WebSearch, WebFetch
 ---
 
 # Kill Your Darlings
@@ -63,7 +66,8 @@ about to; do it. Do not ask permission to research.
 A verdict that arrives before steps 3 and 4 have actually happened is invalid.
 The single exception is one trivial element (a line, a button): a lighter pass is
 fine, but still mark verified vs assumed. Everything else gets the full pipeline
-below.
+below. Scale the depth to the stakes: a tweet gets a quick pass, a feature gets a
+real dig, a company pivot gets the full multi-source, multi-lens treatment.
 
 ## Prime directive
 
@@ -140,6 +144,13 @@ tickets, SERP/keyword tools) when the project has them. See references/playbook.
 for the per-domain research playbook. This step is not optional: actually call
 the tools and run the searches. If you find yourself writing a verdict without
 having run a single search, stop and go research.
+
+Use whatever web tools the environment has. WebSearch and WebFetch are the
+baseline and are always enough to run the outside view; firecrawl, live Chrome,
+and the `deep-research` skill are upgrades, not requirements, so do not stall if
+they are missing. If a search genuinely returns no external signal (a brand-new,
+private, or niche project), say so plainly, lower the confidence, and reason from
+first principles plus one cheap test, rather than inventing evidence.
 
 **Always take the outside view.** Reading only the maker's own materials is half
 blind. Run a deep search across four lenses and report what you find:
