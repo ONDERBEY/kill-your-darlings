@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "kill-your-darlings",
   "displayName": "Kill Your Darlings",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "The reality-check that does not just argue, it checks: it researches the real world (reception, demand, forecast, precedent) instead of giving a louder opinion, names the ideas you are too attached to, and returns an evidence-backed keep/cut/rework/park verdict plus a get-back-on-track plan. A 'kill your darlings' partner for any project, plan, draft, feature, roadmap, or pitch.",
   "author": {
     "name": "ONDERBEY",

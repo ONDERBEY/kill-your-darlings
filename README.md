@@ -109,8 +109,9 @@ The skill is now available in any Claude Code session.
 
 ## Usage
 
-Invoke it explicitly with `/kill-your-darlings`, or trigger it in plain language.
-It fires in three languages:
+Invoke it explicitly with `/kill-your-darlings`, or just type the one-word
+trigger **`killdarlings`** (works in any language). It also fires on plain
+language in three languages:
 
 - **English:** "reality check this plan", "be brutally honest", "am I deluding
   myself", "should I cut this", "play devil's advocate", "is this worth

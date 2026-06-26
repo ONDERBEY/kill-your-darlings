@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.10.0] - 2026-06-26
+
+### Added
+- **One-word trigger.** Typing `killdarlings` (in any language) now fires the
+  skill, alongside `/kill-your-darlings` and the existing EN/TR/DE plain-language
+  phrases. A single distinctive word that does not collide with everyday wording.
+  Wired into the SKILL.md description and documented in the README usage section.
+
 ## [1.9.0] - 2026-06-26
 
 ### Changed
