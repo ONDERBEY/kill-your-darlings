@@ -58,12 +58,14 @@ about to; do it. Do not ask permission to research.
    runtime memory (see `MEMORY.md`).
 3. **Read the actual materials.** Open the real files, draft, data, or page.
    Never reason from a summary or from how it "probably" looks.
-4. **Run the deep search now.** Actually call WebSearch / firecrawl / live Chrome
-   and work the outside view across all four lenses (reception, demand, forecast,
-   precedent), at least one real lookup per lens that applies. Answering from
-   training memory instead of searching is the exact failure this skill exists to
-   prevent.
-5. **Only now** inventory the darlings, stress-test them, and deliver the verdict.
+4. **Run the deep search now, step by step.** Work the Step 2 protocol: frame the
+   open questions, then actually call WebSearch / firecrawl / live Chrome across
+   all four outside-view lenses (reception, demand, forecast, precedent), at least
+   one real lookup per lens that applies, and triangulate the load-bearing facts.
+   Answering from training memory instead of searching is the exact failure this
+   skill exists to prevent.
+5. **Walk it from the user's seat** (Step 3), then inventory the darlings,
+   stress-test them, and deliver the verdict.
 
 A verdict that arrives before steps 3 and 4 have actually happened is invalid.
 The single exception is one trivial element (a line, a button): a lighter pass is
@@ -130,29 +132,48 @@ Apply the no-assumption gate. Read the real materials end to end. Map what the
 project actually is right now (not the aspiration): its current state, its
 moving parts, what each part is supposed to contribute.
 
-### Step 2: Research reality
-Apply the no-assumption gate. Go find the truth that the user's enthusiasm is
-papering over. Typical questions worth answering with real evidence:
-- Does the target user actually have this problem, or is it assumed?
-- What does the market/competitor already do, and better?
-- Do the numbers (traffic, conversion, usage, cost, time) support the bet?
-- Is the technical or business assumption feasible, or hopeful?
-- What does the evidence say the loved part actually contributes?
+### Step 2: Research reality, step by step
+Apply the no-assumption gate. Do not free-associate your way to a verdict. Work
+this protocol in order, and scale its depth to the stakes (see the tiers below).
 
-Use WebSearch and the firecrawl skills for general web evidence. Use real Chrome
-(Claude in Chrome / Control Chrome / chrome-devtools) for live state, logged-in
-data, or sources that block bots. Use domain data sources (analytics, CRM,
-tickets, SERP/keyword tools) when the project has them. See references/playbook.md
-for the per-domain research playbook. This step is not optional: actually call
-the tools and run the searches. If you find yourself writing a verdict without
-having run a single search, stop and go research.
+1. **Frame the open questions.** Write the 3 to 6 load-bearing factual questions
+   the verdict actually depends on. Until they are answered, the verdict is a
+   guess. Typical ones:
+   - Does the target user actually have this problem, or is it assumed?
+   - What does the market/competitor already do, and better?
+   - Do the numbers (traffic, conversion, usage, cost, time) support the bet?
+   - Is the technical or business assumption feasible, or hopeful?
+   - What does the evidence say the loved part actually contributes?
+2. **Map the sources.** For each question, name where the real answer lives: the
+   project's own data (analytics, CRM, logs, tickets) and the outside-view lenses
+   below. See the per-domain evidence map in references/playbook.md.
+3. **Search outside-in.** Start broad (category, trend, base rate), then narrow to
+   the specific competitor, number, or post-mortem. Run at least one real lookup
+   per outside-view lens that applies. Actually call the tools.
+4. **Triangulate.** Corroborate every load-bearing fact with a second source
+   before you trust it. Note conflicts instead of smoothing them over.
+5. **Capture the evidence.** For each load-bearing fact record: the claim, its
+   source, its date, verified-or-assumed, and a confidence. These become the tags
+   in the output.
+6. **Stop rule.** Stop when each open question is answered or explicitly marked
+   unresolved. Unresolved and load-bearing means PARK with a cheap test, not a
+   confident verdict.
 
-Use whatever web tools the environment has. WebSearch and WebFetch are the
-baseline and are always enough to run the outside view; firecrawl, live Chrome,
-and the `deep-research` skill are upgrades, not requirements, so do not stall if
-they are missing. If a search genuinely returns no external signal (a brand-new,
-private, or niche project), say so plainly, lower the confidence, and reason from
-first principles plus one cheap test, rather than inventing evidence.
+Tools: WebSearch and WebFetch are the always-available baseline and are enough to
+run this. firecrawl, real Chrome (Claude in Chrome / Control Chrome /
+chrome-devtools) for live or bot-blocked sources, and the `deep-research` skill
+for a hard lens are upgrades, not requirements; do not stall if they are missing.
+If a search genuinely returns no external signal (a brand-new, private, or niche
+project), say so plainly, lower the confidence, and reason from first principles
+plus one cheap test, rather than inventing evidence.
+
+**Depth tiers (scale to the stakes):**
+- **Quick** (a line, a button, a tweet): one or two lookups, a headline check.
+- **Standard** (a feature, a post, a page): one lookup per applicable lens, then
+  triangulate the two most load-bearing facts.
+- **Deep** (a pivot, a launch, a big bet, or when asked to be thorough):
+  multi-source per lens, use `deep-research`, triangulate every load-bearing fact,
+  and anchor with a base rate.
 
 **Always take the outside view.** Reading only the maker's own materials is half
 blind. Run a deep search across four lenses and report what you find:
@@ -167,10 +188,33 @@ blind. Run a deep search across four lenses and report what you find:
   why (post-mortems, case studies, base rates). What is the common failure mode?
 
 Use the `deep-research` skill when a lens deserves a multi-source, fact-checked
-pass. Mark each finding verified (with source) or assumed. See section 3b of
-references/playbook.md.
+pass. Mark each finding verified (with source) or assumed. See sections 3a and 3b
+of references/playbook.md.
 
-### Step 3: Inventory the darlings
+### Step 3: Walk in the user's shoes
+The outside view is the world in aggregate; this is the one person the project is
+for. Drop into their seat and look again, because a darling is defined by whether
+it serves them, not by what the maker feels.
+
+1. **Name the user.** Who is this actually for (primary, and secondary if real)?
+   Their context: device, time, expertise, mood, what brought them here, and what
+   "done" means for them.
+2. **Walk their real path, first person.** Step through the thing as they would,
+   in order. Where do they land, what do they look for, what do they read, what do
+   they skip, where do they hesitate, stall, or leave.
+3. **Judge each candidate from that seat.** Does this element help the user finish
+   their job, slow them down, or go unnoticed? A part the maker loves but the user
+   skips or trips over is a confirmed darling, whatever the maker feels.
+4. **Name the maker's stake, honestly.** Separately, say what the maker is
+   attached to and why (pride, effort, identity, fear of loss). Not to indulge it,
+   but so the cut is fair and lands: a verdict that ignores the human behind the
+   work gets rejected even when it is right.
+
+Where there is no single end user (a pure internal tool, a personal note), run
+the closest analogue: the future maintainer, the teammate, or the future self who
+inherits it.
+
+### Step 4: Inventory the darlings
 List the candidate darlings: the elements the user is visibly attached to, plus
 the ones the evidence flags as dead weight even if the user has not noticed them.
 For each, note *why it is suspected* using the darling signals in
@@ -178,7 +222,7 @@ references/playbook.md (defended by emotion not evidence, sunk cost, unrequested
 scope, solves a non-problem, survives only by age, complexity-as-cleverness,
 vision untethered from validation).
 
-### Step 4: Stress-test each candidate
+### Step 5: Stress-test each candidate
 Run each one against the goal and the evidence. Assign a verdict:
 - **KEEP** | load-bearing. Removing it measurably hurts the goal. Say what
   evidence makes it load-bearing.
@@ -193,7 +237,7 @@ The hardest darlings to cut are the most beloved. Push on those hardest. But if
 the evidence says a beloved thing is genuinely load-bearing, defend it plainly:
 calibrated honesty cuts both ways.
 
-### Step 5: Deliver the verdict and the path back
+### Step 6: Deliver the verdict and the path back
 Output, in this order:
 1. **The goal** you anchored on, in one line.
 2. **What is genuinely working** (2 to 4 items). This calibrates the cuts and
@@ -201,13 +245,16 @@ Output, in this order:
 3. **What the world says** (the outside view): a line each on reception, demand
    now, forecast, and precedent, each tagged verified or assumed. This is where
    real insight enters, not just your read of the maker's files.
-4. **The kill list:** each darling with its verdict (CUT/REWORK/PARK), the
+4. **From the user's seat:** one or two lines on how the project's real user
+   experiences it and what that implies for the kill list, plus a line naming the
+   maker's main attachment, handled with respect.
+5. **The kill list:** each darling with its verdict (CUT/REWORK/PARK), the
    one-line reason tied to goal or evidence, and verified-vs-assumed marked.
-5. **The lean core:** what the project becomes once the darlings are gone.
-6. **Get back on track:** the next 1 to 3 concrete moves, the tests for any
+6. **The lean core:** what the project becomes once the darlings are gone.
+7. **Get back on track:** the next 1 to 3 concrete moves, the tests for any
    PARKED items, ordered by impact.
 
-### Step 6: Explain, save, and remember
+### Step 7: Explain, save, and remember
 - **Explain it simply when it helps.** If the verdict is hard, high-stakes, or
   needs buy-in, switch to explain mode: lay it out with basic design principles,
   inline or as a clean one-page HTML report. See `references/explain.md` and the
@@ -235,6 +282,9 @@ Output, in this order:
 - It kills load-bearing things because cutting feels productive.
 - It flatters to avoid friction. The whole point is the friction.
 - It treats its own opinion as evidence.
+- It judges only from the outside and never sits in the actual user's seat.
+- It cuts without naming what the maker is attached to, so the call is technically
+  right and gets ignored.
 - It never reaches a verdict (endless "it depends"). PARK with a test instead.
 
 ## Files this skill maintains

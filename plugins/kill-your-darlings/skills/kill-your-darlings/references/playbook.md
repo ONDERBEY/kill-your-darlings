@@ -81,6 +81,41 @@ secondary (opinion, summary, memory). When sources bot-block or need a login,
 use live Chrome rather than trusting a curl/WebFetch status. Mark verified vs
 assumed.
 
+## 3a. The research protocol (run in order)
+
+SKILL.md Step 2 names the steps; here is the method behind each, so the research
+is a procedure, not a vibe.
+
+1. **Frame the open questions.** Convert the maker's claims into falsifiable
+   questions. "Users will love it" becomes "which users, and what evidence shows
+   the love." Keep 3 to 6; more than that and you are boiling the ocean.
+2. **Map the sources** (per question): pick the cheapest source that can actually
+   settle it. Primary (the data, the user, the live page) beats secondary
+   (opinion, summary, memory). See the evidence map in section 3 and the outside
+   view in 3b.
+3. **Search outside-in.** Broad first to learn the shape of the space (category
+   size, trend direction, the base rate), then narrow to the one number,
+   competitor, or post-mortem that decides the call. Broad-then-narrow stops you
+   anchoring on the first thing you find.
+4. **Triangulate.** One source is a lead; two that agree is a finding. When
+   sources disagree, that conflict is itself the insight: report it, do not
+   average it away. Watch for a single origin dressed as many (everyone quoting
+   one blog post).
+5. **Capture evidence cards.** claim | source | date | verified/assumed |
+   confidence. Stale data is an assumption: a 2019 number about a 2026 market is
+   not verified. Confidence tracks how much of the verdict rests on verified vs
+   assumed facts.
+6. **Stop rule.** You are done when every open question is answered or honestly
+   marked open. A load-bearing question you could not answer caps the verdict's
+   confidence and usually means PARK with the cheapest test that would answer it.
+
+**Depth tiers.** Match effort to stakes and reversibility. *Quick:* a reversible,
+low-cost element, one or two lookups. *Standard:* a feature or page, one lookup
+per applicable lens plus triangulation of the two facts that matter most. *Deep:*
+an expensive or hard-to-reverse bet, or an explicit "be thorough", multi-source
+per lens, a `deep-research` pass on the hardest lens, and a named base rate. When
+unsure, go one tier deeper than feels necessary, then stop at the stop rule.
+
 ## 3b. The outside view (the world's verdict)
 
 A reality check that only reads the maker's own materials is half blind. The
@@ -126,6 +161,37 @@ that bot-block or need a login (reviews, social), and the `deep-research` skill
 when a lens deserves a multi-source, fact-checked pass. Mark each finding
 verified (with source) or assumed.
 
+## 3c. The user's-seat pass (the inside view)
+
+The outside view (3b) is the crowd; this is the individual the work is for. Run it
+after the research and before the verdict.
+
+1. **Build a thin persona from evidence, not imagination.** Who is the primary
+   user, pulled from real signal (analytics, tickets, reviews, the maker's own
+   data) rather than a flattering guess. Note their context: device, time budget,
+   expertise, and the job they hired this to do.
+2. **Walk the path in first person.** Narrate their actual journey step by step:
+   arrival, what they scan for, what they act on, what they skip, where they
+   hesitate or bail. For content this is the read-through; for software the task
+   flow; for a pitch the reader on slide 3 at minute two.
+3. **Score each candidate from that seat.** Helps the job / slows it / unnoticed.
+   "Unnoticed" plus "loved by the maker" is the textbook darling.
+4. **Then name the maker's stake.** What is the maker holding onto, and which
+   rationalization (section 2) is doing the holding. State it plainly and with
+   respect; the cut is easier to accept once the attachment is seen, not
+   dismissed.
+
+Per domain, the user's seat is: **content**, the busy reader who skims and leaves;
+**software**, the user mid-task under time pressure; **product**, the new user in
+the first session who has not read the docs; **design**, the person trying to
+finish one task, not admire the screen; **business/pitch**, the investor or buyer
+asking "so what, for me." Where there is no external user, use the future
+maintainer or the future self who inherits it.
+
+A darling confirmed by both the outside view (the world ignored it) and the
+user's seat (this user skips it) is a high-confidence CUT. One the maker loves and
+the user actually relies on is the load-bearing exception you defend.
+
 ## 4. Verdict rubric
 
 | Verdict | Use when | Must include |
@@ -165,12 +231,17 @@ The skill is honest, not cruel; supportive of the goal, not of the ego.
   largest-contentful-paint on a mid-tier phone. Analytics on the current page:
   62% of traffic is mobile; CTA-above-fold variants historically convert higher.
   Competitor pages lead with the value prop, not animation. (verified)
-- **Step 3 inventory:** The 3D hero is the prime darling: signals 1 (loved), 3
+- **Step 3 user's seat:** A mostly-mobile SMB buyer lands wanting to judge the
+  product fast. On a phone the hero loads slowly and pushes the value prop and CTA
+  off-screen, so they scroll past the animation hunting for what it does. The
+  maker's stake: the hero is the craft showpiece of the redesign (rationalization:
+  "it makes us different").
+- **Step 4 inventory:** The 3D hero is the prime darling: signals 1 (loved), 3
   (unrequested), 6 (complexity-as-cleverness).
-- **Step 4 verdict:** CUT (High). It costs 2.1s LCP and pushes the CTA down, on
+- **Step 5 verdict:** CUT (High). It costs 2.1s LCP and pushes the CTA down, on
   a mostly-mobile audience, against the goal of more signups. No evidence it
   lifts conversion; evidence it hurts speed and CTA visibility.
-- **Step 5 path:** Lead with value prop + CTA above the fold. If attached to
+- **Step 6 path:** Lead with value prop + CTA above the fold. If attached to
   motion, REWORK to a lightweight static or CSS treatment. PARK the 3D idea
   behind one test: a 50/50 split where it must beat control on signups to live.
 

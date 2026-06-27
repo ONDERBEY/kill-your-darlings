@@ -4,6 +4,25 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.13.0] - 2026-06-26
+
+### Added
+- **Step-by-step research protocol.** Step 2 is now an ordered procedure instead
+  of a loose instruction: frame the open questions, map sources, search
+  outside-in, triangulate every load-bearing fact, capture evidence cards
+  (claim/source/date/verified-or-assumed/confidence), and a stop rule. Plus three
+  **depth tiers** (quick / standard / deep) that scale the dig to the stakes and
+  reversibility. Detailed method in playbook section 3a.
+- **The user's-seat pass (Step 3).** A new first-person step: name the project's
+  real user, walk their actual path, and judge each candidate by whether it helps
+  them, slows them, or goes unnoticed, then name the maker's own attachment so the
+  cut is fair and lands. Per-domain user seats and method in playbook section 3c.
+  Added to the deliver order ("From the user's seat") and the anti-patterns.
+
+### Changed
+- Renumbered the process to seven steps and updated the on-activation protocol,
+  the worked example, and the README "How it works" to match.
+
 ## [1.12.0] - 2026-06-26
 
 ### Changed

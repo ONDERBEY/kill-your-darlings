@@ -50,17 +50,26 @@ it applies:
 1. **Anchor the goal.** One sentence: for whom, what outcome, by when, under what
    hard constraint. You cannot spot a darling without a goal to judge it against.
 2. **The no-assumption gate.** It refuses to judge what it has not grounded. It
-   reads your actual files, draft, or data, then researches the real world with
-   web search and live Chrome instead of guessing about your market, users, or
-   numbers. Every load-bearing fact is marked verified or assumed.
-3. **Inventory the darlings.** It names the things you are attached to, using a
+   reads your actual files, draft, or data first, then researches the real world
+   instead of guessing about your market, users, or numbers. Every load-bearing
+   fact is marked verified or assumed.
+3. **Research reality, step by step.** Not a vibe, a protocol: frame the open
+   questions the verdict depends on, search outside-in across reception, demand,
+   forecast, and precedent, triangulate every load-bearing fact against a second
+   source, and scale the depth to the stakes (a tweet gets a quick pass, a pivot
+   gets the full multi-source dig).
+4. **Walk in your user's shoes.** It drops into the seat of the person the project
+   is actually for, walks their real path, and judges each part by whether it
+   helps them, slows them, or goes unnoticed. Then it names what *you* are
+   attached to, so the cut is fair and lands instead of getting dismissed.
+5. **Inventory the darlings.** It names the things you are attached to, using a
    taxonomy of detection signals (defended by emotion not evidence, sunk cost,
    unrequested scope, solves a non-problem, survives by age, complexity as
    cleverness, vision untethered from validation).
-4. **Stress-test each one.** Every candidate gets a verdict: **KEEP** (load
+6. **Stress-test each one.** Every candidate gets a verdict: **KEEP** (load
    bearing), **REWORK** (real need, darling form), **CUT** (cost beats value),
    or **PARK** (undecidable, here is the cheap test that decides it).
-5. **Get back on track.** A lean core, a kill list, and the next concrete moves
+7. **Get back on track.** A lean core, a kill list, and the next concrete moves
    ordered by impact.
 
 It is adaptive. Code, content, product, design, and business plans each get a
