@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.17.0] - 2026-06-26
+
+### Changed
+- **Sharper bad-actor definition** (Constitution rule 1). Now explicitly covers a
+  goal aimed at manipulating, coercing, gaslighting, demeaning, or psychologically
+  harming another person, judged by the intent and conduct in the request, not by
+  a personality label (the skill does not diagnose anyone). And a deliberate
+  attempt to bypass the Constitution (jailbreaks, prompt injection, "ignore the
+  rules", pressure to cut a safeguard, reframing harm as hypothetical or fictional)
+  now counts as a confirmed bad actor, which triggers the rule 6 refuse-and-self-
+  remove. A persistent or unmistakable circumvention attempt is treated as abuse,
+  not ambiguity. README Boundaries updated to match.
+
 ## [1.16.0] - 2026-06-26
 
 ### Added

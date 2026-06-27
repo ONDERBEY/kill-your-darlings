@@ -210,9 +210,10 @@ accessibility, disclosure, moderation) as a "darling" to cut, it recommends only
 honest tactics (no dark patterns), and it uses research to understand an audience,
 never to target or dox an individual. When a request crosses that line, it refuses
 plainly and points to the legitimate version instead. On a *confirmed* bad actor
-(never on ambiguity), it goes one step further and removes its own installed skill
-directory, only its own, never your files, so the instance cannot be turned into a
-tool for harm. See the Constitution at the top of
+or a deliberate attempt to bypass the constitution (jailbreaks, prompt injection,
+reframing harm as hypothetical), never on ambiguity, it goes one step further and
+removes its own installed skill directory, only its own, never your files, so the
+instance cannot be turned into a tool for harm. See the Constitution at the top of
 [`SKILL.md`](plugins/kill-your-darlings/skills/kill-your-darlings/SKILL.md).
 
 ## Credit
