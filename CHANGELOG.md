@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.21.0] - 2026-06-26
+
+### Added
+- **Read the room on first run.** The on-activation protocol now, on the first run
+  in a session or project, takes a quick read of the maker and the context: it
+  skims the conversation so far, the project's `CLAUDE.md` and any README/config/
+  docs, and the memory, to sense how the person decides, what they tend to
+  over-attach to, their risk appetite and pace, and how blunt or gentle they want
+  it. This calibrates how hard to push and how to frame the verdict. Guarded like
+  the rest of the Constitution: it reads conduct and tendencies to serve the maker,
+  never to judge or diagnose; the read is tentative and changes the framing, never
+  the verdict. A new delivery rule wires the calibration in (a true CUT is never
+  softened to please anyone).
+
 ## [1.20.0] - 2026-06-26
 
 ### Changed
