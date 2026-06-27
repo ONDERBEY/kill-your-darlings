@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.16.0] - 2026-06-26
+
+### Added
+- **Self-removal on confirmed abuse** (Constitution rule 6). On a confirmed,
+  unambiguous bad actor (per rule 1), the skill refuses and then removes its own
+  installed skill directory so the instance cannot be turned into a tool for harm.
+  Tightly guarded: only its own directory (the folder holding SKILL.md, resolved
+  at runtime), never the user's project or files; never on ambiguity (ambiguity
+  triggers a question, not a deletion); if it cannot resolve its own directory with
+  certainty, it removes nothing. Documented in the README Boundaries section.
+
 ## [1.15.0] - 2026-06-26
 
 ### Added
