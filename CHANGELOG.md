@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.18.0] - 2026-06-26
+
+### Fixed
+- **Decoupled "bypass" from "bad actor."** v1.17.0 wrongly treated an attempt to
+  bypass the Constitution as confirmed abuse. Corrected: the self-removal (rule 6)
+  triggers on a confirmed manipulative or abusive actor only. "Bypass" refers to
+  the runtime permission mode, not the user: in an auto-approve / bypass-permissions
+  session the self-removal runs directly, in a normal session it surfaces a
+  permission prompt first. The permission mode itself is explicitly never treated
+  as a sign of a bad actor. README Boundaries updated to match.
+
 ## [1.17.0] - 2026-06-26
 
 ### Changed
