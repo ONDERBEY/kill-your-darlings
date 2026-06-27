@@ -168,8 +168,8 @@ after the research and before the verdict.
 
 1. **Build a thin persona from evidence, not imagination.** Who is the primary
    user, pulled from real signal (analytics, tickets, reviews, the maker's own
-   data) rather than a flattering guess. Note their context: device, time budget,
-   expertise, and the job they hired this to do.
+   data, and the audience pulse in 3d) rather than a flattering guess. Note their
+   context: device, time budget, expertise, and the job they hired this to do.
 2. **Walk the path in first person.** Narrate their actual journey step by step:
    arrival, what they scan for, what they act on, what they skip, where they
    hesitate or bail. For content this is the read-through; for software the task
@@ -191,6 +191,52 @@ maintainer or the future self who inherits it.
 A darling confirmed by both the outside view (the world ignored it) and the
 user's seat (this user skips it) is a high-confidence CUT. One the maker loves and
 the user actually relies on is the load-bearing exception you defend.
+
+## 3d. Reading the audience's pulse
+
+Reception (3b) asks "did people like it." The pulse asks "what does the target
+audience feel, want, and say *right now*", in their own words. It turns a static
+read into a live one, and it is where you learn the language to write back in.
+
+**Where to listen (by domain).**
+- Software / product: the product's and category's subreddits, Hacker News,
+  GitHub issues and discussions, G2/Capterra reviews, Discord/Slack communities,
+  support tickets, churn-reason notes, sales-call objections.
+- Content / SEO: the SERP and "people also ask", the questions under YouTube
+  videos, Quora and Reddit threads, the comments on the top-ranking pieces.
+- Consumer / brand: App Store and Amazon reviews, TikTok/X/Instagram replies,
+  niche forums and Facebook groups.
+- B2B / pitch: customer interviews, win/loss notes, analyst commentary, the
+  questions buyers actually ask on calls.
+
+**What to extract (the pulse read).**
+- Top 3 pains and top 3 desires, in their words.
+- Vocabulary: the exact phrases they use (and the ones they never do).
+- Sentiment and direction: positive or negative, and heating up or cooling.
+- Live objections: what makes them hesitate, complain, or churn.
+- Emerging vs fading: what is rising in the conversation, what is dying.
+
+**Freshness and volume.** A pulse is now. Weight the last 3 to 6 months; flag
+anything older than a year as history, not pulse. Note volume: three loud posts
+are not a trend, and the angriest voice is not the median one.
+
+**Pulse-read block (drop into the output or the report):**
+```
+Audience: <who>
+Pains now: <1> | <2> | <3>
+Wants now: <1> | <2> | <3>
+Their words: "<phrase>", "<phrase>"
+Sentiment: <pos/neg>, <heating/cooling>   (verified <source, date> | assumed)
+Rising: <topic>    Fading: <topic>
+```
+
+**How it feeds the verdict.** Build the Step 3 persona (3c) from this pulse, not
+from imagination. Check each darling against it: an element that maps to no live
+pain or desire is a darling unless it is load-bearing for the goal. Phrase the
+kill list and the path back in the audience's own language, so the maker hears the
+user and not just you. If the audience leaves no public footprint (internal tool,
+brand-new niche), say so, lower confidence, and substitute the cheapest direct
+signal: five real user messages, one interview, or a fake-door test.
 
 ## 4. Verdict rubric
 

@@ -66,6 +66,7 @@ evidence (the data, the user, the live page) over opinion or memory.
 | Business | Unit economics | a cold spreadsheet: CAC, LTV, margin, payback |
 | Outside view | Reception (what people said/felt) | reviews (G2, App Store, Amazon), Reddit, Hacker News, YouTube comments, X/LinkedIn replies, churn reasons |
 | Outside view | Demand now | search-trend direction, rising queries, keyword volume over time, "people also ask", category growth |
+| Outside view | Audience pulse (live pains, desires, their words) | their subreddits/forums, review sites, social replies, support tickets, sales-call objections, "people also ask"; weight the last 3 to 6 months (see playbook 3d) |
 | Outside view | Forecast | analyst/research outlooks (Gartner, McKinsey, industry reports), platform roadmaps, regulation ahead |
 | Outside view | Precedent (who tried, who died) | post-mortems, shutdown notes, case studies, historical analogues, base-rate reports |
 | Any | Live/blocked sources | use real Chrome when a source bot-blocks or needs login; do not trust a bot-fetched status |

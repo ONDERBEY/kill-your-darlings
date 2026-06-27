@@ -57,7 +57,9 @@ it applies:
    questions the verdict depends on, search outside-in across reception, demand,
    forecast, and precedent, triangulate every load-bearing fact against a second
    source, and scale the depth to the stakes (a tweet gets a quick pass, a pivot
-   gets the full multi-source dig).
+   gets the full multi-source dig). It also takes your target audience's live
+   pulse, reading where they actually talk in their own words, so the call
+   reflects the pains and desires they have right now.
 4. **Walk in your user's shoes.** It drops into the seat of the person the project
    is actually for, walks their real path, and judges each part by whether it
    helps them, slows them, or goes unnoticed. Then it names what *you* are

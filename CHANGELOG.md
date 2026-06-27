@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.14.0] - 2026-06-26
+
+### Added
+- **Read the audience's pulse.** A focused capability inside the research step:
+  go where the target audience actually talks (their subreddits, forums, review
+  sites, communities, "people also ask") and read recent posts in their own words
+  to extract a live pulse: top pains and desires, the exact vocabulary, sentiment
+  and its direction (heating up or cooling), live objections, and rising-vs-fading
+  topics, weighted to the last few months. The skill then judges each darling
+  against what the audience cares about *now* and writes the verdict back in their
+  language. Full method, per-domain listening posts, and a pulse-read template in
+  playbook section 3d; wired into the Step 3 persona, the deliver order, the
+  knowledge-base evidence map, and the README.
+
 ## [1.13.0] - 2026-06-26
 
 ### Added

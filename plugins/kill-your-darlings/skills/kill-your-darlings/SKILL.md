@@ -187,9 +187,19 @@ blind. Run a deep search across four lenses and report what you find:
 - **Precedent:** what happened to others who tried this, who won, who died, and
   why (post-mortems, case studies, base rates). What is the common failure mode?
 
+**Read the audience's pulse.** Reception and demand are a snapshot; read them as
+a live signal. Go where the target audience actually talks (their subreddits,
+forums, review sites, communities, the replies, the search "people also ask"),
+read recent posts in their own words, and extract a pulse: their live pains and
+desires, the exact language they use, the sentiment and its direction (heating up
+or cooling), and the objections they voice right now. Weight the last few months;
+a pulse is "now", not three years ago, and three loud posts are not a trend. Then
+judge each darling against it (does it match what they care about today?) and
+write the verdict back in their own words. See section 3d of references/playbook.md.
+
 Use the `deep-research` skill when a lens deserves a multi-source, fact-checked
-pass. Mark each finding verified (with source) or assumed. See sections 3a and 3b
-of references/playbook.md.
+pass. Mark each finding verified (with source) or assumed. See sections 3a, 3b,
+and 3d of references/playbook.md.
 
 ### Step 3: Walk in the user's shoes
 The outside view is the world in aggregate; this is the one person the project is
@@ -243,8 +253,9 @@ Output, in this order:
 2. **What is genuinely working** (2 to 4 items). This calibrates the cuts and
    proves you are not reflexively negative.
 3. **What the world says** (the outside view): a line each on reception, demand
-   now, forecast, and precedent, each tagged verified or assumed. This is where
-   real insight enters, not just your read of the maker's files.
+   now, forecast, and precedent, plus the audience's live pulse in their own
+   words, each tagged verified or assumed. This is where real insight enters, not
+   just your read of the maker's files.
 4. **From the user's seat:** one or two lines on how the project's real user
    experiences it and what that implies for the kill list, plus a line naming the
    maker's main attachment, handled with respect.

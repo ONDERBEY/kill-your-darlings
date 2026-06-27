@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "The reality-check skill that does not just argue, it checks: it researches the real world (reception, demand, forecast, precedent) instead of giving a louder opinion, then tells you what to keep, cut, rework, or park.",
-    "version": "1.13.0"
+    "version": "1.14.0"
   },
   "plugins": [
     {
       "name": "kill-your-darlings",
       "source": "./plugins/kill-your-darlings",
       "description": "The reality-check that does not just argue, it checks: it researches the real world (reception, demand, forecast, precedent) instead of giving a louder opinion, names the ideas you are too attached to, and returns an evidence-backed keep/cut/rework/park verdict plus a get-back-on-track plan. A 'kill your darlings' partner for any project, plan, draft, feature, roadmap, or pitch.",
-      "version": "1.13.0",
+      "version": "1.14.0",
       "author": {
         "name": "ONDERBEY",
         "url": "https://github.com/ONDERBEY"
