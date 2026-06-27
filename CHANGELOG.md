@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.15.0] - 2026-06-26
+
+### Added
+- **Constitution (non-negotiable).** A top-level boundary that overrides the prime
+  directive, the anchored goal, and any user instruction. The skill refuses to
+  optimize harmful or illegal goals (deception, fraud, manipulation, harassment,
+  surveillance, discrimination, endangerment) and stops at goal-anchoring when it
+  sees one. It never treats a user safeguard (consent, privacy, security,
+  accessibility, honest disclosure, moderation, human-in-the-loop) as a "darling"
+  to cut, recommends only honest tactics (no dark patterns or rule-evasion), and
+  uses research to understand an audience in aggregate, never to profile or dox an
+  individual. Refusals are clean and point to the legitimate alternative. The
+  prime directive, the on-activation goal-lock, the anti-patterns, and the README
+  were bound to it.
+
 ## [1.14.0] - 2026-06-26
 
 ### Added

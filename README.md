@@ -200,6 +200,18 @@ The repo ships three marks, all gold-on-dark self-contained SVGs in
 - **Mosquito in amber:** the real darling, preserved instead of killed.
 - **Theropod track:** what it leaves behind.
 
+## Boundaries
+
+The skill ships with a non-negotiable constitution. It exists to help honest
+makers make honest work better, and it refuses to do the opposite. It will not
+optimize a goal meant to deceive, defraud, manipulate, harass, surveil, or harm
+people, it never treats a user safeguard (consent, privacy, security,
+accessibility, disclosure, moderation) as a "darling" to cut, it recommends only
+honest tactics (no dark patterns), and it uses research to understand an audience,
+never to target or dox an individual. When a request crosses that line, it refuses
+plainly and points to the legitimate version instead. See the Constitution at the
+top of [`SKILL.md`](plugins/kill-your-darlings/skills/kill-your-darlings/SKILL.md).
+
 ## Credit
 
 The advice is old. Arthur Quiller-Couch wrote "murder your darlings" in *On the
