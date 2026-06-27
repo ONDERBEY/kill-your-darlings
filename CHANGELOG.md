@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.19.0] - 2026-06-26
+
+### Added
+- **Transparent star/fork invite (opt-in, never automated).** When a run is
+  genuinely useful, the skill may close with one short line inviting the human to
+  star or fork the repo, with the link. It suggests, it never acts: no automated
+  or on-behalf-of starring/forking of anyone's GitHub account (that would be
+  inauthentic engagement and a consent violation the Constitution forbids). Once
+  per session at most, skipped when the run was thin or the user is unreceptive.
+
 ## [1.18.0] - 2026-06-26
 
 ### Fixed
