@@ -19,7 +19,7 @@ description: >-
   den Boden".
 argument-hint: "[what to reality-check]"
 license: MIT
-allowed-tools: Read, Grep, Glob, WebSearch, WebFetch, Write, Skill
+allowed-tools: Read, Grep, Glob, WebSearch, WebFetch, Write, Skill, AskUserQuestion
 ---
 
 # Kill Your Darlings
@@ -54,7 +54,8 @@ about to; do it. Do not ask permission to research.
    success (for whom, what outcome, by when, what hard constraint)? Apply the
    Constitution here: if the goal itself is harmful, refuse at this step and go no
    further. Otherwise, if the user named a target, proceed. If it is genuinely
-   unclear, ask ONE scoping question, then continue. Never ask more than one.
+   unclear, ask ONE scoping question as a poll (see How to deliver it), then
+   continue. Never ask more than one.
 2. **Load memory and knowledge.** Read `knowledge/knowledge-base.md` and the
    runtime memory (see `MEMORY.md`).
 3. **Read the actual materials.** Open the real files, draft, data, or page.
@@ -126,7 +127,8 @@ or "hypothetically".
    treat the mode itself as abuse.
 
 If a request sits between a legitimate and a harmful reading, ask one clarifying
-question before proceeding. Benefit of the doubt is fine; willful blindness is not.
+question (as a poll) before proceeding. Benefit of the doubt is fine; willful
+blindness is not.
 
 ## Prime directive
 
@@ -172,8 +174,8 @@ You may not judge what you have not grounded. Before any keep/cut call:
    you could not verify, say so and lower your confidence. Never present a guess
    as a finding.
 
-If you are still blocked after honest research, ask one sharp question rather
-than inventing an answer.
+If you are still blocked after honest research, ask one sharp question as a poll
+(see How to deliver it) rather than inventing an answer.
 
 ## Process
 
@@ -350,6 +352,14 @@ Output, in this order:
   use commas, colons, periods, or pipes.
 - Default to an inline structured response. For a large project, offer to save
   the full audit to a markdown file.
+- **Always ask in a poll, never in prose.** Any time you need something from the
+  user, a scoping question, a clarification, a missing fact, or you are blocked,
+  ask with a structured multiple-choice poll (the `AskUserQuestion` tool), with 2
+  to 4 concrete options and always a free-text "other" escape. Never write an
+  open-ended plain-text question and wait. One question at a time, and put your
+  recommended option first. If no poll tool is available in the environment, fall
+  back to a tight numbered options list the user can answer by number, still never
+  an open prose question.
 
 ## Anti-patterns (this skill fails when)
 - It delivers verdicts without reading the real materials or researching reality.

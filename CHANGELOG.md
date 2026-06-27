@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and this project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.20.0] - 2026-06-26
+
+### Changed
+- **Always ask in a poll, never in prose.** Any time the skill needs something from
+  the user (a scoping question, a clarification, a missing fact, or when it is
+  blocked) it now asks with a structured multiple-choice poll via the
+  `AskUserQuestion` tool: 2 to 4 concrete options, recommended option first, and a
+  free-text "other" escape, one question at a time. It never writes an open-ended
+  plain-text question and waits. Falls back to a tight numbered options list where
+  no poll tool exists. `AskUserQuestion` added to `allowed-tools`; the
+  on-activation scoping question, the no-assumption gate, and the Constitution's
+  clarifying question are all bound to this rule.
+
 ## [1.19.0] - 2026-06-26
 
 ### Added
